@@ -1,4 +1,9 @@
 .titulo {
+    /* imagen */
+    background-image: url('../images/fotocamino.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    /* fin imagen */
     height: 300px;
 }
 
@@ -29,13 +34,13 @@
 }
 
 .simu-ofrece {
-    background-size: 125%;
+    background-size: 100%;
     background-position: center center;
     transition: 1s;
 }
 
 .simu-ofrece:hover {
-    background-size: 150%;
+    background-size: 125%;
 }
 
 .simu-ofrece:nth-child(odd) {
@@ -47,7 +52,7 @@
     padding: 25px !important;
     height: 300px;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -76,6 +81,7 @@
     /* .video-simu, */
     .descripcion {
         height: 500px;
+        font-size: 20px;
     }
 }
 
@@ -85,6 +91,7 @@
     }
 
     .descripcion {
+        font-size: 20px;
         height: 500px;
     }
 }
