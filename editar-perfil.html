@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editar perfil - SIMU</title>
+	<link rel="stylesheet" type="text/css" href="css/editar-perfil.css">
+    <link rel="stylesheet" type="text/css" href="css/normalizar.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <nav id="navegador">
+        <ul class="sub-nav">
+            <li><img src="images/logo-simu-negativo.png" alt="Logo SIMU" id="logo">
+            </li>
+            <li class="menu-links"><a href="index.html" title="Inicio">INICIO</a></li>
+            <li class="menu-links">
+                PRODUCTOS
+
+                <ul id="menu-productos">
+                    <li><a href="motos.html" title="Motos usadas">MOTOS USADAS</a></li>
+                    <li><a href="accesorios.html" title="Accesorios">ACCESORIOS</li></a>
+                </ul>
+            </li>
+            <li class="menu-links menu-selected" ><a href="vender.html" title="Vende tu moto">VENDE TU MOTO</a></li>
+            <li class="menu-links"><a href="modmantenimiento/index1.html" title="Reparación y mantenimiento">REPARACIÓN Y MANTENIMIENTO</a></li>
+            <li class="menu-links"><a href="nosotros.html" title="Nosotros" class="headerLinks">NOSOTROS</a></li>
+        </ul>
+
+        <ul class="sub-nav">
+            <li>
+                <a href="#abrirCarrito" title="Carrito de compra">
+                    <div id="carrito" class="fa fa-shopping-cart fa-2x">
+                        <div id="numero">0</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <span class="fa fa-notification"></span>
+            </li>
+            <li id="li-usuario">
+                <span class="fa fa-user"></span> Usuario
+                <ul id="menu-usuario">
+                    <li><a href="editar-perfil.html" title="Editar perfil">Editar perfil</a></li>
+                    <li><a href="index.html" title="Cerrar sesión">Cerrar sesión</a></li>
+                </ul>
+            </li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <div id="contenedor">
+        <form>
+            <h1>Editar perfil</h1>
+
+            <div id="sub-form">
+                <section class="section-principal">
+                    <h2>Datos básicos</h2>
+
+                    <div class="fila">
+                        <label>Nombre de usuario</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label>Nombres</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label>Apellidos</label>
+                        <input type="text">
+                    </div>
+
+                    <h2>Contraseña</h2>
+
+                    <div class="fila">
+                        <label>Contraseña antigua</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="fila">
+                        <label>Contraseña nueva</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="fila">
+                        <label>Confirma tu nueva contraseña</label>
+                        <input type="text">
+                    </div>
+                </section>
+
+                <section class="section-principal">
+                    <h2>Datos de contacto</h2>
+
+                    <h3>Correo electrónico</h3>
+
+                    <div class="fila">
+                        <label>Correo electrónico antiguo</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label>Correo electrónico nuevo</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label>Confirmar correo electrónico nuevo</label>
+                        <input type="text">
+                    </div>
+
+                    <h3>Teléfono de contacto</h3>
+
+                    <div class="fila">
+                        <label for="">Teléfono de contacto antiguo</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label for="">Teléfono de contacto nuevo</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="fila">
+                        <label>Confirmar teléfono de contacto nuevo</label>
+                        <input type="text">
+                    </div>
+                </section>
+            </div>
+
+            <div class="botones"> 
+                <button class="enviar">Enviar Formulario</button>
+                <input id="limpiar" type="reset" value="Limpiar">
+            </div>
+        </form>
+
+        <footer id="footerGrande">
+            <div id="menuFooter">
+                <div class="menusFooter">
+                  <h2>Productos y servicios</h2>
+
+                  <ul class="itemsFooter">
+                    <li><a href="motos.html" title="Inicio">Compra tu moto</a></li>
+                    <li><a href="vender.html" title="Vende tu moto">Vende tu moto</a></li>
+                    <li><a href="accesorios.html" title="Accesorios">Accesorios</a></li>
+                    <li><a href="reparacion-mantenimiento.html" title="Reparación y mantenimiento">Reparación</a></li>
+                </ul>
+
+                <div class="idioma">
+                    <select>
+                        <option>Español</option>
+                        <option>English</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="menusFooter">
+                <h2>Contáctanos</h2>
+
+                <ul class="itemsFooter">
+                    <li><strong>Dirección:</strong> Carrera 123</li>
+                    <li><strong>Teléfono:</strong> 234565</li>
+                    <li><strong>Celular:</strong> 3204900056</li>
+                </ul>
+
+                <ul id="redes">
+                    <li class="caja-redes"><a href="https://www.facebook.com/motoaventurajr" title="Facebook" target="_blank"><span class="fa fa-facebook fa-2x"></span></a></li>
+
+                    <li class="caja-redes"><a href="https://twitter.com/JDMOTOSTORE" title="Twitter"><span class="fa fa-twitter fa-2x"></span></a></li>
+
+                    <li class="caja-redes"><a href="tel:+573204900056" title="Whatsapp"><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="menusFooter">
+              <h2>Cuenta</h2>
+
+              <ul class="itemsFooter">
+                <li><a href="index.html" title="Cerrar sesión">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>	
+</body>
+</html>

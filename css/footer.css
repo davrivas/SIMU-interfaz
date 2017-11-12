@@ -1,0 +1,147 @@
+#footerGrande {
+    width: 100%;
+    background-color: #1a1a1a;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#menuFooter {
+    flex-direction: row;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menusFooter {
+    flex-grow: 1;
+}
+
+.menusFooter * {
+    font-size: 14px;
+}
+
+.menusFooter h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.idioma {
+    width: 80px;
+    overflow: hidden;
+    height: 35px;
+    background-color: #2b2929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.idioma:hover {
+    background-color: orange;
+}
+
+.idioma select {
+    width: auto;
+    height: 35px;
+    border: 0;
+    color: #fff;
+    background-color: transparent;
+}
+
+.idioma select:focus {
+    outline: none;
+}
+
+.idioma select option {
+    color: #fff;
+    background-color: #2b2929;
+}
+
+.idioma select option:focus {
+    outline: none;
+}
+
+#redes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #fff;
+    transition: .3s;
+    margin-top: 20px;
+    transition: .3s;
+    list-style: none;
+}
+
+#redes * {
+    font-size: 15px;
+}
+
+#redes a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.caja-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.caja-redes {
+    margin-right: 15px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.caja-redes:nth-child(1) {
+    padding: 10px 14px;
+}
+
+.caja-redes:nth-child(1):hover {
+    background-color: #4267b2;
+}
+
+.caja-redes:nth-child(2) {
+    padding: 10px 13px 10px 12px;
+}
+
+.caja-redes:nth-child(2):hover {
+    background-color: #00aced;
+}
+
+.caja-redes:nth-child(3) {
+    padding: 10px 13px 10px 12px;
+}
+
+.caja-redes:nth-child(3):hover {
+    background-color: #189d0e;
+}
+
+.caja-redes a .fa {
+    font-size: 20px;
+}
+
+.itemsFooter {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.itemsFooter li a {
+    color: #fff;
+    transition: .5s;
+}
+
+.itemsFooter li a:hover {;
+    border-bottom: 1px dotted #fff;
+}

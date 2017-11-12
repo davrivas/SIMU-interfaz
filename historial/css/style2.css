@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+#chat{
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	padding: 5px;
+	background-color: orange;
+	width: 160px;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-bottom: 50px;
+	margin-right: 20px;
+	transition: .1s;
+	text-align: center;
+	 font-family: 'Oswald',sans-serif;
+	 cursor: pointer;
+}
+#chat:hover{
+	color: #fff;
+}
+#linea{
+	
+	width: 100%;
+	height: 2px;
+	background-color: orange;
+	margin-top: 11px;
+	}
+#principal{
+	max-width: 100%;
+	height: 3000px;
+	background-color: #000;
+}
+#primera{
+	width: 100%;
+	height: 1000px;
+	background-image: url(../images/fotocamino.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	
+}
+#menu{
+		
+		width: 100%;
+		height: 70px;
+		margin: none;
+		background-color: rgba(0,0,0,.5);
+	}
+#boton{
+	background-color: rgba(0,0,0,0);
+	border: none;
+	font-style: verdana;
+	font-size: 20px;
+	color: white;
+	margin-top: 8px; 
+	margin-left: 30px; 
+}	
+.boton{
+	font-size: 14px;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: .8px;
+    background-color: #000;
+    background: none;
+    color: #CDC8C8;
+    border: none;
+    font-weight: none;
+    margin: 6px;
+    margin-left: 30px;
+    cursor: pointer;
+	}
+	
+	#selector{
+		cursor: pointer;
+	}
+	.tabla{
+		background-color: #3D3B3B;
+		margin-top: 70px;
+		border: 1px solid orange;
+		border-collapse: collapse;
+		width: 1000px;
+		height: 100px;
+		 font-family: sans-serif;
+		 color: #fff;
+		  letter-spacing: .8px;
+	}
+	.tabla td{
+		text-align: center;
+		border: 1px solid orange;
+	}
+	.tabla tr:hover{
+		background-color: gray;
+	}
+	#titulo{
+		  font-family: 'Oswald',sans-serif;
+    letter-spacing: .8px;
+    font-size: 30px;
+    background-color: #3D3B3B;
+    color: orange;
+	}
+.tabla1{
+		background-color: #3D3B3B;
+		margin-top: 40px;
+		border: 1px solid orange;
+		border-collapse: collapse;
+		width: 1000px;
+		height: 180px;
+		 font-family: sans-serif;
+		 color: #fff;
+		  letter-spacing: .8px;	
+	}
+	.tabla1 td{
+		text-align: center;
+		border: 1px solid orange;
+	}
+	.tabla1 tr:hover{
+		background-color: gray;
+	}
+	#titulo1{
+		  font-family: 'Oswald',sans-serif;
+    letter-spacing: .8px;
+    font-size: 20px;
+    padding: 2px;
+    background-color: #fff;
+      color: orange;
+	}
+	.titulo2{
+	  font-family: 'Oswald',sans-serif;
+    letter-spacing: .8px;
+    font-size: 20px;
+    padding: 2px;
+    background-color: #fff;
+      color: orange;
+	}

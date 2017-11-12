@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+	<title>inventarios</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+  <link rel="shortcut icon" href="../images/favicon.png">
+     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+</head>
+<body>
+<!--caja superior del titulo-->
+
+   <header>
+ <img src="../images/logo-simu-negativo.png" class="logo" width="100px" height="auto">
+           <h1>Control de inventarios</h1>
+
+   </header>
+     <!--Menu izquierdo-->
+<div class="contenedor">
+  <div id="caja1">
+        <nav>
+           <div id="subcaja2">
+               <img src="img/icono%20admin.png" class="icono-admin" width="150px" height="auto">
+               <h5 class="titulo">Administrador</h5>
+
+           </div>
+        </nav>
+        <nav>
+         <ul>
+             <li id="cero"><a href="MenuHamburguesa.html"> Inicio <i class="fa fa-home" aria-hidden="true"></i></a></li>
+             <li id="uno"><a href="Editar.html"> Editar perfil <i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+             <li id="dos"><a href="Inventario de Accesorios.html">Accesorios</a>
+
+             <li id="tres"><a href="Modulo.html">Motos</a>
+                  
+             <li id="cuatro"><a href="Compra.html">Compras</a></li>
+             
+      
+         </ul>
+     </nav>    
+   </div>
+<div id="main-container">
+ <h4>Venta de accesorios</h4>
+ <hr>
+	<table>
+		<thead>
+			<tr>
+				<th>Fecha</th><th>Codigo</th><th>Nombre del Producto</th><th>Precio de Compra</th><th>Precio de venta</th><th>Ganancia</th><th>Editar</th><th>Borrar</th>
+			</tr>
+		</thead>
+		
+		
+		<tr>
+			<td>17/05/2017</td><td>1747211237</td><td>Casco</td><td>$250.000</td><td>$370.000</td><td>$120.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>17/08/2017</td><td>VBNS45689S</td><td>Guantes</td><td>$30.000</td><td>$50.000</td><td>$20.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>15/06/2017</td><td>Q4W7R12357</td><td>Baul</td><td>$65.000</td><td>$90.000</td><td>$25.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>01/11/2017</td><td>4SDG8S6544</td><td>alforjas</td><td>$80.000</td><td>$120.000</td><td>$40.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>25/01/2017</td><td>654ASF1234</td><td>Alarmas</td><td>$130.000</td><td>$200.000</td><td>$70.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>05/01/2017</td><td>OUI13257SD</td><td>Vestimenta</td><td>$250.000</td><td>$400.000</td><td>$150.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>17/05/2017</td><td>1747211237</td><td>Casco</td><td>$250.000</td><td>$370.000</td><td>$120.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>17/08/2017</td><td>VBNS45689S</td><td>Guantes</td><td>$30.000</td><td>$50.000</td><td>$20.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>15/06/2017</td><td>Q4W7R12357</td><td>Baul</td><td>$65.000</td><td>$90.000</td><td>$25.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>17/08/2017</td><td>VBNS45689S</td><td>Guantes</td><td>$30.000</td><td>$50.000</td><td>$20.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		<tr>
+			<td>15/06/2017</td><td>Q4W7R12357</td><td>Baul</td><td>$65.000</td><td>$90.000</td><td>$25.000</td><td><span class="fa fa-pencil"></span></td><td><span class="fa fa-trash"></span></td>
+		</tr>
+		
+	</table>	
+
+
+	<!--AGREGAR ACCESORIO-->
+
+
+</div>
+    <div class="contenedor2">
+<div id="separacion">
+  <h2>Agregar accesorio</h2>
+        </div>
+  <div id="agregar">
+  	<p id="cod">Codigo: 1234567891</p>
+  	<p id="lista">Tipo de accesorio</p>
+  	<select name="Seleccion">
+  		 <option value="1">Alarmas</option>
+  		 <option value="2">Sliders</option>
+  		 <option value="3">Vestimenta-Protección</option>
+  		 <option value="3">Protector de tanque</option>
+  		 <option value="3">Alforjas</option>
+  		 <option value="3">Inter-comunicadores</option>
+  		 <option value="3">Maletero</option>
+  		 <input type= "text" name="precio" placeholder="" id="precio">
+            <p id="precio2">Precio de Compra</p>
+            <input type= "text" name="subnombre" placeholder="Nombre" id="subnombre">
+            <p id="Nombre2">Nombre del Accesorio</p>
+            <input type= "text" name="precioventa" placeholder="" id="precioventa">
+            <p id="subprecio">Precio de venta</p>
+            <button class="boton1">Agregar</button>
+            <button class="boton2">Limpiar</button>
+  	</select>
+</div>
+  </div>
+</div>
+
+</body>
+</html>
