@@ -1,0 +1,80 @@
+.barra-navegacion {
+    background-color: #000 !important;
+    font-family: "Oswald" !important;
+    font-size: 15px;
+    padding: 0 10px !important;
+}
+
+.barra-navegacion * {
+    color: #fff !important;
+}
+
+.nav-item, .dropdown-item {
+    /* padding: 5px !important; */
+}
+
+.items-nav, .dropdown-item {
+    border-bottom: 1.5px solid #000;
+    transition: .3s;
+}
+
+.items-nav:hover, .dropdown-item:hover {
+    border-bottom: 1.5px solid orange;
+}
+
+.logo-simu-negativo {
+    pointer-events: none;
+    cursor: initial;
+}
+
+.logo-simu-negativo img {
+    height: 20px;
+    width: auto;
+}
+
+.nav-barras {
+    color: #fff !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+    background-color: #000 !important;
+}
+
+.dropdown-menu a {
+    color: #fff !important;
+}
+.text-navright {
+    display: inline-block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.boton-carrito {
+    background-color: #000 !important;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    transition:  .5s;
+}
+
+.boton-carrito:hover {
+    color: orange;
+}
+
+@media (min-width: 992px) {
+    .nav-item, .dropdown-item {
+        padding: 10px !important;
+    }
+
+    .text-navright {
+        display: none;
+    }
+}

@@ -1,25 +1,3 @@
-#contenedor {
-    width: 100%;
-    height: fit-content;
-}
-
-#encabezado {
-    height: 420px;
-    background-image: url(../images/motos/moto-fondo.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-#leyenda {
-    color: white;
-    bottom: 15px;
-    right: 15px;
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    font-weight: bold;
-    padding: 25px;
-}
-
-#leyenda h1 {
-    font-size: 40px;
+.encabezado {
+    background-image: url('../images/motos/moto-fondo.jpg');
 }
