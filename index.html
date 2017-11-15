@@ -26,7 +26,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="items-nav nav-item">
+                    <li class="items-nav items-nav-activo nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="items-nav nav-item dropdown">
@@ -34,8 +34,8 @@
                             Productos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="motos/index.html">Motos usadas</a>
-                            <a class="dropdown-item" href="accesorios/index.html">Accesorios</a>
+                            <a class="dropdown-item" href="productos/motos/index.html">Motos usadas</a>
+                            <a class="dropdown-item" href="productos/accesorios/index.html">Accesorios</a>
                         </div>
                     </li>
                     <li class="items-nav nav-item">
@@ -46,6 +46,9 @@
                     </li>
                     <li class="items-nav nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="#contacto">Contáctanos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav my-2 my-lg-0">
@@ -96,7 +99,7 @@
                 <h2>Motos usadas</h2>
 
                 <p>Las motos usadas ofrecidas en SIMU pasan por un estricto control de documentación legal para que puedan ser ofrecidas. Tu mismo puedes vender tu moto</p>
-                <button class="btn-simu-naranja">Ver más</button>
+                <a href="motos/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
         <div id="ofrece3" class="simu-ofrece contenedor container-fluid d-flex row">
@@ -104,7 +107,7 @@
                 <h2>Cascos</h2>
 
                 <p>Los cascos son excenciales para la seguridad del motociclista, previenene</p>
-                <button class="btn-simu-naranja">Ver más</button>
+                <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
         <div id="ofrece4" class="simu-ofrece contenedor container-fluid d-flex row">
@@ -112,7 +115,7 @@
                 <h2>Guantes</h2>
 
                 <p>Los guantes son un elemento clave para la protección de las manos motociclista.</p>
-                <button class="btn-simu-naranja">Ver más</button>
+                <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
 
@@ -131,7 +134,7 @@
                 <h2>Productos y servicios</h2>
 
                 <p><a href="motos/index.html" class="links-footer" title="Compra tu moto">Compra tu moto</a></p>
-                <p><a href="" class="links-footer" title="Vende tu moto">Vende tu moto</a></p>
+                <p><a href="vender.html" class="links-footer" title="Vende tu moto">Vende tu moto</a></p>
                 <p><a href="accesorios/index.html" class="links-footer" title="Accesorios">Accesorios</a></p>
                 <p><a href="" class="links-footer" title="Reparación">Reparación</a></p>
 
@@ -168,13 +171,14 @@
 
     <!-- Modales -->
 
+    <!-- Carrito de compra -->
     <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: initial;">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span class="fa fa-close" aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">

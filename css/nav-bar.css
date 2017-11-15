@@ -6,16 +6,16 @@
 }
 
 .barra-navegacion * {
-    color: #fff !important;
-}
-
-.nav-item, .dropdown-item {
-    /* padding: 5px !important; */
+    color: #fff;
 }
 
 .items-nav, .dropdown-item {
     border-bottom: 1.5px solid #000;
     transition: .3s;
+}
+
+.items-nav-activo, .items-nav-activo:hover {
+    border-bottom: 1.5px solid #fff !important;
 }
 
 .items-nav:hover, .dropdown-item:hover {
@@ -36,8 +36,6 @@
 .nav-barras {
     color: #fff !important;
 }
-
-
 
 .dropdown-menu {
     background-color: #000 !important;
@@ -62,6 +60,7 @@
     padding: 0;
     margin: 0;
     transition:  .5s;
+    cursor: pointer;
 }
 
 .boton-carrito:hover {
