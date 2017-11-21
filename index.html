@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8"/>
-    <title>SIMU</title>
+    <title>Inicio - SIMU</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -99,14 +99,19 @@
                 <h2>Motos usadas</h2>
 
                 <p>Las motos usadas ofrecidas en SIMU pasan por un estricto control de documentación legal para que puedan ser ofrecidas. Tu mismo puedes vender tu moto</p>
-                <a href="motos/index.html"><button class="btn-simu-naranja">Ver más</button></a>
+
+                <div class="d-flex flex-row">
+                    <a href="productos/motos/index.html"><button class="btn-simu-naranja m-1">Comprar</button></a>
+                    <a href="vender.html"><button class="btn-simu-naranja m-1">Vender</button></a>
+                </div>
+                
             </section>
         </div>
         <div id="ofrece3" class="simu-ofrece contenedor container-fluid d-flex row">
             <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Cascos</h2>
 
-                <p>Los cascos son excenciales para la seguridad del motociclista, previenene</p>
+                <p>Los cascos son excenciales para la seguridad del motociclista, previene muchas fatalidades</p>
                 <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
@@ -169,24 +174,25 @@
         </footer>
     </div>
 
-    <!-- Modales -->
+    <!-- MODALES -->
 
     <!-- Carrito de compra -->
-    <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+    <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="carritoDeCompra" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content contenido-modal">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel" style="color: initial;">Modal title</h5>
+                    <h4 class="modal-title" id="exampleModalLabel">Carrito de compra</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="fa fa-close" aria-hidden="true"></span>
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-simu-naranja">Comprar</button>
+
+                    <input type="text" placeholder="Ingrese código de promoción" class="input-simu">
                 </div>
             </div>
         </div>

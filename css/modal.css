@@ -1,9 +1,9 @@
 .contenido-modal {
-    border: 5px solid #1a1a1a;
+    border: 5px solid rgba(26, 26, 26, .75);
     border-radius: 5px;
     padding: 25px !important;
     height: fit-content;
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
 }
 
@@ -11,15 +11,3 @@
     color: #fff;
     transition: .5s;
 }
-
-/* @media (min-width: 768px) and (max-width: 1199px) {
-    .contenido-modal {
-        width: 80% !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contenido-modal {
-        width: 75% !important;
-    }
-} */

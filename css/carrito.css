@@ -1,11 +1,4 @@
-.numero-prod {
-    width: 15px;
-}
-
-.conceptos {
-    list-style: none;
-}
-
-.total {
-    border-top: 1px solid #fff;
+.input-simu {
+    width: 200px;
+    font-size: 13px;
 }
