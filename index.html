@@ -84,8 +84,8 @@
                     <h1 id="unete-titulo">Únete a una nueva aventura</h1>
                 </div>
                 <div class="botones row d-flex justify-content-center">
-                    <button class="btn btn-simu-naranja m-1" data-target="#registrarse"><span class="fa fa-user-plus"></span> Regístrate</button>
-                    <button class="btn btn-simu-naranja m-1" data-target="#inicia-sesion"><span class="fa fa-sign-in"></span> Inicia sesión</button>
+                    <button class="btn btn-simu-naranja m-1" type="button" data-toggle="modal" data-target="#registrarse"><span class="fa fa-user-plus"></span> Regístrate</button>
+                    <button class="btn btn-simu-naranja m-1" type="button" data-toggle="modal" data-target="#inicia-sesion"><span class="fa fa-sign-in"></span> Inicia sesión</button>
                 </div>
             </section>
         </header>
@@ -145,7 +145,7 @@
                 <p><a href="accesorios/index.html" class="links-footer" title="Accesorios">Accesorios</a></p>
                 <p><a href="" class="links-footer" title="Reparación">Reparación</a></p>
 
-                <p class="mt-2 mb-1"><span class="fa fa-language"></span> Idioma:</p>
+                <p class="mt-3 mb-1"><span class="fa fa-language"></span> Idioma:</p>
 
                 <div class="select d-flex justify-content-start align-items-center">
                     <select>
@@ -161,7 +161,7 @@
                 <p><strong>Teléfono:</strong> 234565</p>
                 <p><strong>Celular:</strong> 3204900056</p>
 
-                <div class="redes row mt-2 d-flex flex-row">
+                <div class="redes row mt-3 d-flex flex-row">
                     <a href="https://www.facebook.com/motoaventurajr" target="_blank" id="facebook" class="icon-red d-flex justify-content-center align-items-center fa fa-facebook ml-2 mr-2"></a>
                     <a href="https://twitter.com/JDMOTOSTORE" target="_blank" id="twitter" class="icon-red d-flex justify-content-center align-items-center fa fa-twitter ml-2 mr-2"></a>
                     <a href="tel:+573204900056" target="_blank" id="whatsapp" class="icon-red d-flex justify-content-center align-items-center fa fa-whatsapp ml-2 mr-2"></a>
@@ -278,10 +278,10 @@
 
     <!-- Iniciar sesión -->
     <div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog" aria-labelledby="iniciarSesion" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content contenido-modal">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">Inicia sesión</h4>
+                    <h3 class="modal-title" id="exampleModalLabel">Inicia sesión</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
                     </button>
@@ -292,9 +292,31 @@
                         ...
                     </div>
                     <div class="modal-footer">
-                        <div class="row">
-                            <input class="input-simu" type="submit" value="Iniciar sesión">
-                        </div>
+                        <input class="btn-simu-naranja" type="submit" value="Inicia sesión">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registrarse -->
+    <div class="modal fade" id="registrarse" tabindex="-1" role="dialog" aria-labelledby="registrate" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Regístrate</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <form action="">
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn-simu-naranja" type="submit" value="Registrarse">
+                        <input type="reset" class="btn-simu-naranja" value="Limpiar campos">
                     </div>
                 </form>
             </div>
