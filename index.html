@@ -107,6 +107,7 @@
                 
             </section>
         </div>
+
         <div id="ofrece3" class="simu-ofrece contenedor container-fluid d-flex row">
             <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Cascos</h2>
@@ -115,6 +116,7 @@
                 <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
+
         <div id="ofrece4" class="simu-ofrece contenedor container-fluid d-flex row">
             <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Guantes</h2>
@@ -181,19 +183,120 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content contenido-modal">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">Carrito de compra</h4>
+                    <h3 class="modal-title" id="exampleModalLabel">Carrito de compra</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-simu-naranja">Comprar</button>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="productos-carrito row">
+                            <div class="row mt-3 mb-3">
+                                <div class="col-8 col-md-7 col-lg-4">
+                                    <img src="images/accesorios/b.jpg" alt="Bajaj" class="img-fluid">
+                                </div>
+                                <div class="col-4 col-md-5 col-lg-8">
+                                    <div class="row d-flex mt-2 mt-lg-auto mb-2 mb-lg-auto">
+                                        <div class="col-12 col-lg-4 d-flex align-items-center flex-column mb-3 mt-lg-auto mb-lg-auto justify-content-start">
+                                            <p class="nombre-producto m-0 text-left">Baul maletero</p>
+                                            <p class="precio-producto m-0 text-left">$<span class="precio-producto">200000</span></p>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-end justify-content-lg-center align-items-center mt-lg-auto mb-lg-auto">
+                                            <div class="col-1 mr-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-plus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center">
+                                                <input type="text" class="input-simu cantidad-producto" value="1" maxlength="2">
+                                            </div>
+                                            <div class="col-1 ml-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-minus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center align-items-end align-items-md-start">
+                                                <span class="botones-carrito fa fa-trash"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-end mt-5 mt-lg-auto mb-lg-auto">
+                                            $<span class="precio-total">200000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <input type="text" placeholder="Ingrese código de promoción" class="input-simu">
+                            <div class="row mt-3 mb-3">
+                                <div class="col-8 col-md-7 col-lg-4">
+                                    <img src="images/motos/bajaj-ejemplo.jpg" alt="Bajaj" class="img-fluid">
+                                </div>
+                                <div class="col-4 col-md-5 col-lg-8">
+                                    <div class="row d-flex mt-2 mt-lg-auto mb-2 mb-lg-auto">
+                                        <div class="col-12 col-lg-4 d-flex align-items-center flex-column mb-3 mt-lg-auto mb-lg-auto justify-content-start">
+                                            <p class="nombre-producto m-0 text-left">Pulsar</p>
+                                            <p class="precio-producto m-0 text-left">$<span class="precio-producto">2000000</span></p>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-end justify-content-lg-center align-items-center mt-lg-auto mb-lg-auto">
+                                            <div class="col-1 mr-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-plus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center">
+                                                <input type="text" class="input-simu cantidad-producto" value="2" maxlength="2">
+                                            </div>
+                                            <div class="col-1 ml-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-minus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center align-items-end align-items-md-start">
+                                                <span class="botones-carrito fa fa-trash"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-end mt-5 mt-lg-auto mb-lg-auto">
+                                            $<span class="precio-total">4000000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carrito-totales row d-flex justify-content-end">
+                            <div class="footer-carrito col-auto d-flex flex-column">
+                                <p><strong>Subtotal</strong></p>
+                                <p><strong>Impuestos</strong></p>
+                                <p><strong>Total</strong></p>
+                            </div>
+                            <div class="footer-carrito col-auto d-flex justify-content-end flex-column">
+                                <p>$<span class="subtotal-carrito">6620000</span></p>
+                                <p>$<span class="impuestos-carrito">1059200</span></p>
+                                <p>$<span class="total-carrito">7679200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-simu-naranja m-1">Comprar</button>
+                        <input type="text" placeholder="Ingresa código de promoción" class="input-simu m-1">                                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iniciar sesión -->
+    <div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog" aria-labelledby="iniciarSesion" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Inicia sesión</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
                 </div>
+
+                <form action="">
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <input class="input-simu" type="submit" value="Iniciar sesión">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -201,5 +304,6 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>src="js/carrito.js"</script>
 </body>
 </html>

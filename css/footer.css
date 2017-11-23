@@ -10,6 +10,10 @@
     padding: 25px !important;
 }
 
+.footer-items p {
+    margin: 0px;
+}
+
 .icon-red {
     border-radius: 50%;
     background-color: #2d2d2d;
