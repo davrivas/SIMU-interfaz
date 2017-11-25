@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="../../images/favicon.png">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/sweetalert2.min.css">
     <link rel="stylesheet" href="../../css/normalizar.css">
     <link rel="stylesheet" href="../../css/nav-bar.css">
     <link rel="stylesheet" href="../../css/footer.css">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="../../css/motos.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="contenedor container-fluid">
         <!-- navbar -->
 
         <header class="encabezado container-fluid d-flex justify-content-md-end justify-content-center">
@@ -24,7 +25,7 @@
 
         <main class="productos row d-flex justify-content-md-around justify-content-center">
             <!-- filtros collapse mobile -->
-            <aside class="comp-prod col-11 col-md-5 col-lg-4 m-2 m-md-2 m-lg-3">
+            <aside class="comp-prod col-12 col-md-6 col-lg-4">
                 <h3>Filtros</h3>
                 <hr class="linea-prod mt-2 mb-2">
 
@@ -122,41 +123,23 @@
                 </form>
             </aside>
             <!-- hacer producto foto toda en mobile -->
-            <section class="comp-prod col-11 col-md-6 col-lg-7 m-2 m-md-2 m-lg-3">
+            <article class="comp-prod col-12 col-md-6 col-lg-8">
                 <h3>Resultados (3)</h3>
                 <hr class="linea-prod mt-2 mb-2">
 
                 <div class="row d-flex flex-wrap">
-                    <a href="ejemplo.html"><div class="producto-cuadro col-12 col-md-4 col-lg-3 m-1">
-                        <div class="row">
-                            <img src="../../images/motos/bajaj-ejemplo.jpg" alt="" class="img-prod img-fluid">
-                        </div>
-                        <div class="row mt-1">
-                            <h6>Pulsar <span class="precio-naranja">$6'000.000</span> <span class="carrito-plus fa fa-cart-plus"></span></h6>
-                        </div></a>
-                    </div>
-
                     <div class="producto-cuadro col-12 col-md-4 col-lg-3 m-1">
-                        <div class="row">
-                            <img src="../../images/motos/honda-ejemplo.jpg" alt="" class="img-prod img-fluid max-width">
-                        </div>
-                        <div class="row mt-1">
-                            <h6>Honda XT <span class="precio-naranja">$10'000.000</span> <span class="carrito-plus fa fa-cart-plus"></span></h6>
-                        </div>
+                    <div class="row">
+                        <img src="../../images/motos/bajaj-ejemplo.jpg" alt="" class="img-prod img-fluid">
                     </div>
-
-                    <div class="producto-cuadro col-12 col-md-4 col-lg-3 m-1">
-                        <div class="row">
-                            <img src="../../images/motos/yamaha-ejemplo.jpg" alt="" class="img-prod img-fluid">
-                        </div>
-                        <div class="row mt-1">
-                            <h6>Yamaha TH654 <span class="precio-naranja">$12'600.000</span> <span class="carrito-plus fa fa-cart-plus"></span></h6>
-                        </div>
+                    <div class="row mt-1">
+                        <h6><a class="link-producto" href="ejemplo.html">Pulsar</a> <span class="precio-naranja">$6'000.000</span> <span class="carrito-plus fa fa-cart-plus"></span></h6>
+                    </div>
                     </div>
                 </div>
 
                 
-            </section>
+            </article>
         </main>
 
         <!-- footer -->
@@ -165,5 +148,7 @@
     <script src="../../js/jquery-3.2.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/sweetalert2.min.js"></script>
+    <script src="../../js/productos.js"></script>
 </body>
 </html>

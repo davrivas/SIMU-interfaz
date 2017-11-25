@@ -2,6 +2,7 @@
     background-size: 100%;
     background-attachment: fixed;
     height: 300px;
+    margin: 0;
 }
 
 .titulo-prod {
@@ -16,13 +17,16 @@
 .productos {
     background-color: #000;
     height: fit-content;
-    padding: 25px;
+}
+
+.productos .comp-prod {
+    
 }
 
 .comp-prod {
     background-color: rgba(255,255,255,.1);
     height: fit-content;
-    padding: 10px !important;
+    padding: 25px;
 }
 
 .linea-prod {
@@ -49,8 +53,6 @@
 }
 
 .img-prod {
-    width: 300px !important;
-    height: 150px !important;
     transition: .3s;
 }
 
@@ -58,9 +60,13 @@
     opacity: .6;
 }
 
-/* .precio-nombre {
-    padding: 5px;
-} */
+.link-producto {
+    transition:  .3s;
+}
+
+.link-producto:hover {
+    color: orange !important;
+}
 
 .precio-naranja {
     color: orange;
