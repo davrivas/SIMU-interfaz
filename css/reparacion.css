@@ -5,7 +5,6 @@
 
 }
 .medio{
-	height: 800px;
 	background-image: url(../images/mante.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -14,7 +13,7 @@
 
 ul li a{
 	color: #fff;
-	font-family: oswald;
+	/* font-family: oswald; */
 }
 
 ul li a:hover{
@@ -48,27 +47,27 @@ p{
 
 .hola1{
 
-height: 250px;
+padding: 15px;
 background-color: rgba(0,0,0,.9);
-font-family: oswald;
+/* font-family: oswald; */
 font-size: 1.2em;
 color: #fff;
 	
 }
 .hola2{
 
-height: 250px;
+padding: 15px;
 background-color: rgba(0,0,0,.9);
-font-family: oswald;
+/* font-family: oswald; */
 font-size: 1.2em;
 color: #fff;
 	
 }
 .hola3{
 
-height: 250px;
+padding: 15px;
 background-color: rgba(0,0,0,.9);
-font-family: oswald;
+/* font-family: oswald; */
 font-size: 1.2em;
 color: #fff;
 	

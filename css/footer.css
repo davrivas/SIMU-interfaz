@@ -1,61 +1,35 @@
 .pie-pagina {
     background-color: #1a1a1a;
+    padding: 25px 0px;
 }
 
 .pie-pagina h2 {
     margin-bottom: 25px !important;
 }
 
-.footer-items {
-    padding: 25px !important;
-}
-
-.footer-items p {
-    margin: 0px;
-}
-
 .icon-red {
-    border-radius: 50%;
+    border-radius: 9px;
     background-color: #2d2d2d;
     font-size: 20px !important;
     transition: .3s;
-}
-
-#facebook {
-    padding: 10px 14px !important;
+    padding: 15px;
+    width: auto;
 }
 
 #facebook:hover {
     background-color: #4267b2;
 }
 
-#twitter {
-    padding: 10px 13px 10px 12px !important;
-}
-
 #twitter:hover {
     background-color: #00aced;
-}
-
-#whatsapp {
-    padding: 10px 13px 10px 12px !important;
 }
 
 #whatsapp:hover {
     background-color: #189d0e;
 }
 
-.links-footer {
-    color: #fff;
-    transition: .5s;
-}
-
-.links-footer:hover {
-    border-bottom: 1px dotted orange;
-    color: orange;
-}
-
-.select, select {
-    width: fit-content !important;
-    height: 40px !important;
+@media (min-width: 768px) {
+    .icon-red {
+        padding: 5px;
+    }
 }

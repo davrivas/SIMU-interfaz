@@ -25,25 +25,23 @@ body{
     background-color:#000;
 }
 .productos{
-background-image: url(../images/motos/scooter-1245844_1920.jpg);   
-background-size: 100% 100%;
-height: 1100px;
 width: 100%;
-font-family: oswald;
+background-color: #000;
+/* font-family: oswald; */
 
 }
 
 .comp-prod{
     width: 100%;
     height: 600px;
-    background-color: rgba(0,0,0,.8);
+    background-color: #1a1a1a;
     padding: 25px;
 }
 
 .resultados{
     width: 100%;
     height: 1050px;
-    background-color: rgba(0,0,0,.8);
+    background-color: #1a1a1a;
     padding: 25px;
 }
 

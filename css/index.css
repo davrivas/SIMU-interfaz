@@ -1,6 +1,6 @@
 .titulo {
     /* imagen */
-    background-image: url(../images/fotocamino.jpg);
+    background-image: url('../images/fotocamino.jpg');
     background-size: 100%;
     background-attachment: fixed;
     /* fin imagen */
@@ -76,12 +76,47 @@
     background-image: url('../images/mante.jpg');
 }
 
+#nosotros {
+    height: 100px;
+    background-color: #000;
+}
+
+#nosotros-div {
+    background-image: url('../images/moto-aventura2.jpg');
+}
+
+.moto-aventura {
+    width: 50%;
+    height: auto;
+}
+
+/* Volver arriba */
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     .titulo,
     /* .video-simu, */
     .descripcion {
         height: 500px;
         font-size: 20px;
+    }
+
+    .moto-aventura {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .moto-aventura {
+        width: 50%;
+        height: auto;
     }
 }
 
@@ -93,5 +128,10 @@
     .descripcion {
         font-size: 20px;
         height: 500px;
+    }
+
+    .moto-aventura {
+        width: auto;
+        height: auto;
     }
 }
