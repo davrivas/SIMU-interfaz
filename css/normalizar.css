@@ -59,7 +59,7 @@ a:hover {
 }
 
 .btn-simu-naranja:hover {
-    background-color: orange;
+    background-color: #f9900e;
 }
 
 .btn-simu-naranja:focus {
@@ -68,29 +68,21 @@ a:hover {
 
 /* Formularios */
 
-.select {
-    overflow: hidden;
-    background-color: #2b2929;
+.select-simu {
     transition: .3s;
+    background-color: #2b2929;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #2b2929;
+    border: none;
     border-radius: 5px;
 }
 
-.select:hover {
-    background-color: orange;
-    color: #fff;
-}
-
-.select select {
+.select-simu:focus {
+    background-color: #2b2929;
     color: rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-    border: none;
 }
 
-.select select:hover {
-    color: #fff;
-}
-
-.select select option {
+.select-simu option {
     color: #fff;
     background-color: #2b2929;
 }
@@ -106,17 +98,39 @@ a:hover {
 }
 
 .input-simu:focus {
-    background-color: orange !important;
+    background-color: #504d4d;
+    color: #fff;
 }
 
 .input-simu::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.input-simu:focus::-webkit-input-placeholder {
-    color: #fff !important;
-}
-
 .input-simu-archivo {
     cursor: pointer;
+}
+.foto {
+    background-color: #1a1a1a;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 1em;
+    border-radius: .2rem;
+    color: #fff;
+}
+
+.foto-block{
+    font-size: 1em;
+    padding: 0.6em;
+   
+}
+
+.foto-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.foto-title {
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 1.2857em;
 }

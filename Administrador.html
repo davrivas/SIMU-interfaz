@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Administrador</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+      <div class="container-fluid">
+        <!--Parte superior-->
+            <section class="row text-center  arriba">
+
+                <div class="col-md-2 encabezado1">SIMU</div>
+                <div class="col-md-10 encabezado2">Control de Inventarios</div>
+
+            </section>
+        <!-- Fin parte superior-->
+
+        <!--col centrales-->
+            <section class="row medio">
+
+                <div class="col-md-2 medio1"> 
+
+                  <!--carta de administrador-->
+
+                  <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/03/29/21/27/motorcycle-2186589__340.jpg">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Jhon</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3">Admnistrador</h5>
+                           </div>
+                        
+                      </div>
+                   
+                  </article>
+                    <!--Fin carta de administrador-->
+                    <!---->
+                    <!--Menu lateral-->
+                  <article>
+
+                    <div class="row mt-5">   
+
+                        <nav class=" menu col-md-12">
+
+                          <ul class="nav">
+
+                             <li><a href="Administrador.html"><i class="fa fa-home "></i> Inicio</a></li>
+                             <li><a href="Editar_Perfil.html"><i class="fa fa-user-circle-o"></i> Editar perfil</a></li>
+                             <li><a href="Tabla2_Motos.html"><i class="fa fa-file-o "></i> Motos</a></li>
+                             <li><a href="Tabla1_Accesorios.html"><i class="fa fa-bar-chart-o "></i> Accesorios</a></li>
+                             <li><a href=""><i class="fa fa-table "></i> Compras</a></li>
+                             <li><a href="index.html"><i class="fa fa-sign-out mb-5"></i> Salir</a></li>
+                
+                          </ul>
+
+                        </nav>
+                    </div>
+
+                    
+                  </article>
+                  <!--Fin menu lateral-->
+                     
+                </div>
+
+                <div class="col-md-10 medio2">
+
+                    <section class="col col-sm-12 titulo mt-3 text-center titulo">
+                        <h2 >¡ Visualice las actualizaciones de el control respectivo a su inventario !</h2>
+                    </section>
+
+                  <!--cartas del medio-->
+
+                    
+
+                    <div class="row text-center mt-5 ">
+
+                        <!--carta 1-->
+                        <section class="col-sm-12 col-md-4 ">
+                          <div class="contenedor ml-3">
+                            <div class="carta">
+                                <div class="lado frente">
+                                   <strong class="subtitulo">Estadisticas </strong><i class="fa fa-line-chart mt-2  iconos" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="lado p-4 atras">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus placeat non nemo quas.</p>
+                                  <button type="button" class="btn btn-warning botones" onclick="estadis()">Mostrar</button>
+                                </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <!--carta 2-->
+
+                        <section class="col-sm-12 col-md-4 ">
+                          <div class="contenedor  ml-3">
+                            <div class="carta">
+                                <div class="lado frente">
+                                   <strong class="subtitulo">Reportes</strong><i class="fa fa-clipboard mt-2 iconos" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="lado p-4 atras ">
+                                  
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </section>
+
+                        <!--carta 3-->
+
+                        <section class="col-sm-12 col-md-4 ">
+                          <div class="contenedor  ml-3">
+                              <div class="carta">
+                                  <div class="lado frente">
+                                      <strong class="subtitulo">Productos</strong><i class="fa fa-line-chart mt-2  iconos" aria-hidden="true"></i>
+
+                                  </div>
+                                  <div class="lado p-4 atras">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, maxime dolore culpa. Quidem repellendus.</p>
+                                    <button type="button" class="btn btn-warning botones" onclick="produ()">Mostrar</button>
+                                  </div>
+                              </div>
+                          </div>
+                        </section>
+                    </div>
+                    
+                      
+                  <!--FIN cartas del medio-->
+                  <!---->
+                  <!--calendario-->
+
+                      <div class="container">
+
+                        <div class="col-sm-12 col-md-11">
+
+                          <div class="row justify-content-center mt-5">
+
+                            <table class="table-condensed ">
+                              <thead>
+                                  <tr>
+                                    <th colspan="7">
+                                      <i class="fa fa-angle-double-left flechas" aria-hidden="true"></i> Noviembre 2017 <i class="fa fa-angle-double-right flechas" aria-hidden="true"></i>
+
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                      <th>Domingo</th>
+                                      <th>Lunes</th>
+                                      <th>Martes</th>
+                                      <th>Miercoles</th>
+                                      <th>Jueves</th>
+                                      <th>Viernes</th>
+                                      <th>Sabado</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td class="muted">29</td>
+                                      <td class="muted">30</td>
+                                      <td class="muted">31</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                  </tr>
+                                  <tr>
+                                      <td>5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td>11</td>
+                                  </tr>
+                                  <tr>
+                                      <td>12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td class="btn-success boton1"><strong>17</strong></td>
+                                      <td>18</td>
+                                  </tr>
+                                  <tr>
+                                      <td>19</td>
+                                      <td class="btn-warning boton2" onclick="alerta()"><strong>20</strong>
+
+                                      </td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td>25</td>
+                                  </tr>
+                                  <tr>
+                                      <td>26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td class="muted">1</td>
+                                      <td class="muted">2</td>
+                                      <td class="muted">3</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                  <!--FIN calendario-->
+
+                                
+                </div>
+            </section>
+        <!-- Fin col centrales-->
+  
+
+      <div> 
+        
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="js/scripts.js"></script>
+
+</body>
+</html>  
