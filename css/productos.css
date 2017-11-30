@@ -2,7 +2,7 @@ body{
     background-color: #fff;
 }
 .principal {
-    background-image: url(../images/motos/moto-fondo.jpg);
+    /* background-image: url(../images/motos/moto-fondo.jpg); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,14 +33,14 @@ background-color: #000;
 
 .comp-prod{
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     background-color: #1a1a1a;
     padding: 25px;
 }
 
 .resultados{
     width: 100%;
-    height: 1050px;
+    /* height: 1050px; */
     background-color: #1a1a1a;
     padding: 25px;
 }
