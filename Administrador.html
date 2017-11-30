@@ -7,8 +7,78 @@
 
   <link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min (2).css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <style>
+    .btn-simu-naranja {
+    padding: 10px !important;
+    border: 2px solid rgba(255,255,255,.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-simu-naranja:hover {
+    background-color: rgba(253, 164, 0, .8) !important;
+}
+
+.cerrar-modal:hover {
+    color: rgba(253, 164, 0, .8) !important;
+}
+
+.btn-simu-naranja:focus {
+    outline-color: orange !important;
+}
+
+/* Formularios */
+
+.select-simu {
+    transition: .3s;
+    background-color: #2b2929;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 5px;
+}
+
+.select-simu:focus {
+    background-color: #2b2929;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.select-simu option {
+    color: #fff;
+    background-color: #2b2929;
+}
+
+.input-simu {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2b2929;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+.input-simu:focus {
+    background-color: #504d4d;
+    color: #fff;
+}
+
+.input-simu::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-simu-archivo {
+    cursor: pointer;
+}
+  </style>
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
@@ -84,19 +154,19 @@
 
                     
 
-                    <div class="row text-center mt-5 ">
+                    <div class="row text-center ml-3 mt-5 ">
 
                         <!--carta 1-->
                         <section class="col-sm-12 col-md-4 ">
-                          <div class="contenedor ml-3">
+                          <div class="contenedor ">
                             <div class="carta">
                                 <div class="lado frente">
-                                   <strong class="subtitulo">Estadisticas </strong><i class="fa fa-line-chart mt-2  iconos" aria-hidden="true"></i>
+                                   <strong class="subtitulo">Estadisticas </strong>
 
                                 </div>
                                 <div class="lado p-4 atras">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus placeat non nemo quas.</p>
-                                  <button type="button" class="btn btn-warning botones" onclick="estadis()">Mostrar</button>
+                                  <button type="button" class="btn-simu-naranja" onclick="estadis()">Mostrar</button>
                                 </div>
                             </div>
                           </div>
@@ -105,15 +175,24 @@
                         <!--carta 2-->
 
                         <section class="col-sm-12 col-md-4 ">
-                          <div class="contenedor  ml-3">
+                          <div class="contenedor ">
                             <div class="carta">
                                 <div class="lado frente">
-                                   <strong class="subtitulo">Reportes</strong><i class="fa fa-clipboard mt-2 iconos" aria-hidden="true"></i>
+                             
+                                     <strong class="subtitulo">Reportes</strong>
+
+                               
+
                                 </div>
 
                                 <div class="lado p-4 atras ">
-                                  
+
+                                 <p class="p-5">Aqui podras ver el resultado de los avances comerciales que has tenido en formato PDF y/o excel</p>
+                                 <button class="btn-simu-naranja" type="button" data-toggle="modal" data-target="#generar-reporte">Click aqui</button>
+                                <!-- <a href="docs/pdf.pdf" onclick="reportes()">Click aqui</a></button> -->
+
                                 </div>
+
                                 
                             </div>
                           </div>
@@ -122,31 +201,77 @@
                         <!--carta 3-->
 
                         <section class="col-sm-12 col-md-4 ">
-                          <div class="contenedor  ml-3">
+                          <div class="contenedor ">
                               <div class="carta">
                                   <div class="lado frente">
-                                      <strong class="subtitulo">Productos</strong><i class="fa fa-line-chart mt-2  iconos" aria-hidden="true"></i>
+                                      <strong class="subtitulo">Productos</strong>
+
 
                                   </div>
                                   <div class="lado p-4 atras">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, maxime dolore culpa. Quidem repellendus.</p>
-                                    <button type="button" class="btn btn-warning botones" onclick="produ()">Mostrar</button>
+                                    <button type="button" class="btn-simu-naranja" onclick="produ()">Mostrar</button>
                                   </div>
                               </div>
                           </div>
                         </section>
-                    </div>
+                  </div>
+
+                    <!--Graficas estadisticos-->
+
+               
+
+                    <section class="row m-auto justify-content-around">
+
+
+                      <div class="col-md-6 mt-5 grafica1">
+                        
+                        <p class="mt-2">Enero</p>
+                        <div class="progress mt-4">
+                           <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                         <p class="mt-2">Febrero</p>
+                        <div class="progress  mt-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                         <p class="mt-2">Marzo</p>
+                        <div class="progress  mt-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                         <p class="mt-2">Abril</p>
+                        <div class="progress mt-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                         <p class="mt-2">Mayo</p>
+                        <div class="progress mt-4">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+
+                       
+                          
+                      </div>
+                      <div class="col-md-4  mt-5 grafica1">
+                         <div class="pie mt-5 ml-5">
+                            <strong>Ventas</strong>
+                         </div>
+                      </div>
+
+                    </section>
+
+  
+                  
+
+                  <!--FIN Graficas estadisticos-->
                     
-                      
                   <!--FIN cartas del medio-->
                   <!---->
                   <!--calendario-->
 
                       <div class="container">
 
-                        <div class="col-sm-12 col-md-11">
+                        <div class="col-8 col-md-12 ">
 
-                          <div class="row justify-content-center mt-5">
+                          <div class="row mb-5 justify-content-center mt-5">
 
                             <table class="table-condensed ">
                               <thead>
@@ -228,13 +353,71 @@
   
 
       <div> 
-        
+  <div class="modal fade" id="generar-reporte" tabindex="-1" role="dialog" aria-labelledby="generarReporte" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Generar reporte</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <form name="form-reporte" action="" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                          <label for="tipo-reporte">Tipo de reporte</label>
+                          <select class="select-simu" name="tipo-reporte" id="tipo-reporte">
+                            <option value="selecc">Seleccione</option>
+                            <option value="users">Usuarios</option>
+                            <option value="compras">Compra de motos</option>
+                            <option value="ventas">Venta de motos</option>
+                            <option value="acc">Accesorios</option>
+                            <option value="prov-acc">Proveedores de accesorios</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="ordenar">Ordenar por campo</label>
+                          <select class="select-simu" name="ordenar" id="ordenar">
+                            <option value="selecc">Seleccione</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="form-group">
+                            <label for="fecha-inicio">Fecha inicio</label>
+                            <input class="input-simu" type="date" id="fecha-inicio" name="fecha-inicio"></div>
+                          <div class="form-group">
+                            <label for="fecha-final">Fecha final</label>
+                            <input class="input-simu" type="date" id="fecha-final" name="fecha-final"></div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn-simu-naranja" id="btn-generar-reporte">
+                                Generar reporte
+                            </button>
+                            <button class="btn-simu-naranja" data-dismiss="close">Cancelar</button>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>      
 
    <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/jquery-3.2.1.slim.min (2).js"></script>
    <script src="js/popper.min.js"></script>
+   <script src="js/popper.min (2).js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/bootstrap.min (2).js"></script>
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   <script src="js/scripts.js"></script>
 
+   <script src="js/scripts.js"></script>
+  <script>
+    $('#btn-generar-reporte').click(function() {
+      window.open('docs/pdf.pdf');
+    });
+  </script>
 </body>
 </html>  

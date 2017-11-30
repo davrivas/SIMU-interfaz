@@ -13,3 +13,7 @@ function produ(){
 
 	swal("Hola", "Podras ver todas los productos de tu negocio", "success");
 }
+
+function reportes(){
+	swal("Felicidades","Ya tienes tu archivo PDF", "success")
+  }
