@@ -8,5 +8,4 @@ Sistema de información para motos usadas
 
 * Nicolas Murillo
 * David Rivas
-* Javier Neisa
 * Daniel Ramirez
