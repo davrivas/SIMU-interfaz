@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Administrador</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos2.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+      <div class="container-fluid">
+        <!--Parte superior-->
+            <section class="row text-center  arriba">
+
+                <div class="col-md-2 encabezado1">SIMU</div>
+                <div class="col-md-10 encabezado2">Control de Inventarios</div>
+
+            </section>
+        <!-- Fin parte superior-->
+
+        <!--col centrales-->
+            <section class="row medio">
+
+                <div class="col-md-2 medio1"> 
+
+                  <!--carta de administrador-->
+
+                  <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/03/29/21/27/motorcycle-2186589__340.jpg">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Jhon</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3">Admnistrador</h5>
+                           </div>
+                        
+                      </div>
+                   
+                  </article>
+                    <!--Fin carta de administrador-->
+                    <!---->
+                    <!--Menu lateral-->
+                  <article>
+
+                    <div class="row mt-5">   
+
+                        <nav class=" menu col-md-12">
+
+                          <ul class="nav">
+
+                             <li><a href="Administrador.html"><i class="fa fa-home "></i> Inicio</a></li>
+                             <li><a href="Editar_Perfil.html"><i class="fa fa-user-circle-o"></i> Editar perfil</a></li>
+                             <li><a href="Tabla2_Motos.html"><i class="fa fa-file-o "></i> Motos</a></li>
+                             <li><a href="Tabla1_Accesorios.html"><i class="fa fa-bar-chart-o "></i> Accesorios</a></li>
+                             <li><a href=""><i class="fa fa-table "></i> Compras</a></li>
+                             <li><a href=""><i class="fa fa-sign-out mb-5"></i> Salir</a></li>
+                
+                          </ul>
+
+                        </nav>
+                    </div>
+
+                    
+                  </article>
+                  <!--Fin menu lateral-->
+                     
+                </div>
+
+                <div class="col-md-10 medio2">
+
+                    <section class="col col-sm-12 titulo mt-3 text-center titulo">
+                        <h2 > ¡ Motos ! </h2>
+                    </section>
+                    <!--TABLA-->
+                    <div class="input-group md-form form-sm form-2 pl-0 mt-3">
+                    <input class="form-control my-0 py-1 grey-border" type="text" placeholder="Search" aria-label="Search">
+                    <span class="input-group-addon waves-effect grey lighten-3" id="basic-addon1"><a><i class="fa fa-search text-grey" aria-hidden="true"></i></a></span>
+                </div>
+
+                    <table class="table table-responsive table-bordered mt-3">
+
+                        <thead class="thead-inverse">
+                         
+                            <th>Fecha</th>
+                            <th>V.I.N</th>
+                            <th>Precio de Venta</th>
+                            <th>Inversión mecanica</th>
+                            <th>Inversión electrica</th>
+                            <th>inversión documental</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
+                          
+                        </thead>
+                          <tr>
+                            <td>17/05/2017</td>
+                            <td>JHLRD77874C026458</td>
+                            <td>$6.000.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/08/2017</td>
+                            <td>VBNS45689SD125354</td>
+                            <td>$5.500.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>No</td>
+                            <td>
+                              <button class="btn btn-info" ><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>15/06/2017</td>
+                            <td>Q4W7R1235748GSDF0</td>
+                            <td>$10.000.000</td>
+                            <td>Si</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                          <td>01/11/2017</td>
+                          <td>LPO45SG4SDG8S6544</td>
+                          <td>$7.000.000</td>
+                          <td>No</td>
+                          <td>No</td>
+                          <td>No</td>
+                          <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>25/01/2017</td>
+                          <td>QWER789654ASF1234</td>
+                          <td>$15.000.000</td>
+                          <td>Si</td>
+                          <td>Si</td>
+                          <td>Si</td>
+                          <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>05/01/2017</td>
+                          <td>OUI13257SD84SDCV4</td>
+                          <td>$6.000.000</td>
+                          <td>Si</td>
+                          <td>Si</td>
+                          <td>Si</td>
+                          <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17/05/2017</td>
+                            <td>JHLRD77874C026458</td>
+                            <td>$6.000.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/08/2017</td>
+                            <td>VBNS45689SD125354</td>
+                            <td>$5.500.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>No</td>
+                            <td>
+                              <button class="btn btn-info" ><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/05/2017</td>
+                            <td>JHLRD77874C026458</td>
+                            <td>$6.000.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/08/2017</td>
+                            <td>VBNS45689SD125354</td>
+                            <td>$5.500.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>No</td>
+                            <td>
+                              <button class="btn btn-info" ><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/05/2017</td>
+                            <td>JHLRD77874C026458</td>
+                            <td>$6.000.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/08/2017</td>
+                            <td>VBNS45689SD125354</td>
+                            <td>$5.500.000</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>No</td>
+                            <td>
+                              <button class="btn btn-info" ><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                        </table>
+
+                    <!--FIN TABLA-->
+                </div>
+            </section>
+        <!-- Fin col centrales-->
+  
+
+      <div> 
+        
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="js/scripts3.js"></script>
+
+</body>
+</html>  

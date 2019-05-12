@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Administrador</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos4.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+</head>
+<body>
+      <div class="container-fluid">
+        <!--Parte superior-->
+            <section class="row text-center  arriba">
+
+                <div class="col-md-2 encabezado1">SIMU</div>
+                <div class="col-md-10 encabezado2">Control de Inventarios</div>
+
+            </section>
+        <!-- Fin parte superior-->
+
+        <!--col centrales-->
+            <section class="row medio">
+
+                <div class="col-md-2 medio1"> 
+
+                  <!--carta de administrador-->
+
+                  <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/03/29/21/27/motorcycle-2186589__340.jpg">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Jhon</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3">Admnistrador</h5>
+                           </div>
+                        
+                      </div>
+                   
+                  </article>
+                    <!--Fin carta de administrador-->
+                    <!---->
+                    <!--Menu lateral-->
+                  <article>
+
+                    <div class="row mt-5">   
+
+                        <nav class=" menu col-md-12">
+
+                          <ul class="nav">
+
+                             <li><a href="Administrador.html"><i class="fa fa-home "></i> Inicio</a></li>
+                             <li><a href="Editar_Perfil.html"><i class="fa fa-user-circle-o"></i> Editar perfil</a></li>
+                             <li><a href="Tabla2_Motos.html"><i class="fa fa-file-o "></i> Motos</a></li>
+                             <li><a href="Tabla1_Accesorios.html"><i class="fa fa-bar-chart-o "></i> Accesorios</a></li>
+                             <li><a href=""><i class="fa fa-table "></i> Compras</a></li>
+                             <li><a href=""><i class="fa fa-sign-out mb-5"></i> Salir</a></li>
+                
+                          </ul>
+
+                        </nav>
+                    </div>
+
+                    
+                  </article>
+                  <!--Fin menu lateral-->
+                     
+                </div>
+
+                <div class="col-md-10 medio2">
+
+
+                  
+                    <section class="col sm-12 col-md-7 "> 
+
+                      <form method="post">
+
+                        <div class="formu p-3 ">
+
+                          <h1 id="titulo "><strong>Editar</strong> Perfil</h1>
+                          <hr>
+                           <div class="form-group  ml-4">
+                              <label for=""> Nombre</label>
+                              <input id="nombre" type="text" placeholder="Escribe tus nombres aqui" class="col-md-10 form-control" required> 
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Apellido</label>
+                              <input id="apellido" type="text" placeholder="Escribe tus apellidos aqui" class="col-md-10 form-control" required>  
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Email</label>
+                              <input id="correo" type="email required" placeholder="ejemplo@gmail.com" class="col-md-10 form-control" required>  
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Dirección</label>
+                              <input id="direccion" type="text" placeholder="Escribe tu direccion" class="col-md-10 form-control" required>  
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Telefono</label>
+                              <input id="telefono" type="text" placeholder="Escribe tu numero telefonico" class="col-md-10 form-control" required>  
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Contraseña</label>
+                              <input id="contra" type="password" placeholder="Escribe tu Contraseña" class="col-md-10 form-control" required>
+                              
+                           </div>
+
+                           <div class="form-group ml-4">
+                              <label for="">Repetir Contraseña</label>
+                              <input id="repcontra" type="password" placeholder="Escribe tu Contraseña" class="col-md-10 form-control" required>  
+
+                           </div>
+
+                           <div class="form-group ml-4 mt-5">
+                              <button class="btn btn-warning btn-block col-md-10" type="submit" onclick="validar()">Cambiar</button>
+                           </div>
+                        </div>
+                      </form>
+                    </section>
+                  <!--Fin formulario-->
+
+
+
+                </div>
+            </section>
+        <!-- Fin col centrales-->
+  
+
+      <div> 
+        
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="js/scripts2.js"></script>
+
+</body>
+</html>

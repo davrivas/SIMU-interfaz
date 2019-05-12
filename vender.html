@@ -1,184 +1,134 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Vende tu moto - SIMU</title>
-	<link rel="stylesheet" type="text/css" href="css/vende-moto.css">
-    <link rel="stylesheet" type="text/css" href="css/normalizar.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <meta charset="utf-8">
-</head>
-<body>
-    <nav id="navegador">
-        <ul class="sub-nav">
-            <li><img src="images/logo-simu-negativo.png" alt="Logo SIMU" id="logo">
-            </li>
-            <li class="menu-links"><a href="index.html" title="Inicio">INICIO</a></li>
-            <li class="menu-links">
-                PRODUCTOS
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalizar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/nav-bar.css">
+        <link rel="stylesheet" href="css/vender.css">
+        <title>Vende tu moto - SIMU</title>
+    </head>
+    <body>
+     <div class="container-fluid">
+  <div class="row">
+    <section class="col-md-12 fixed-top menu ">
 
-                <ul id="menu-productos">
-                    <li><a href="motos.html" title="Motos usadas">MOTOS USADAS</a></li>
-                    <li><a href="accesorios.html" title="Accesorios">ACCESORIOS</li></a>
-                </ul>
-            </li>
-            <li class="menu-links menu-selected" ><a href="vender.html" title="Vende tu moto">VENDE TU MOTO</a></li>
-            <li class="menu-links"><a href="modmantenimiento/index1.html" title="Reparación y mantenimiento">REPARACIÓN Y MANTENIMIENTO</a></li>
-            <li class="menu-links"><a href="nosotros.html" title="Nosotros" class="headerLinks">NOSOTROS</a></li>
-        </ul>
+      <div class=" container-fluid">
+        navbar
 
-        <ul class="sub-nav">
-            <li>
-                <a href="#abrirCarrito" title="Carrito de compra">
-                    <div id="carrito" class="fa fa-shopping-cart fa-2x">
-                        <div id="numero">0</div>
+            <div class="fondo-moto container-fluid mt-5 d-flex justify-content-center">
+                <form action="" method="post" id="form-vender" class=" col-11 col-sm-9 col-md-8 col-lg-6 mt-5">
+                    <h1 class="text-center">Vende tu moto</h1>
+
+                    <div class="form-group d-flex flex-column">
+                        <label for="placa">Placa</label>
+                        <input id="placa" name="placa" type="text" placeholder="Ejemplo: UYI 06A" class="input-simu" autofocus required>
                     </div>
-                </a>
-            </li>
-            <li>
-                <span class="fa fa-notification"></span>
-            </li>
-            <li id="li-usuario">
-                <span class="fa fa-user"></span> Usuario
-                <ul id="menu-usuario">
-                    <li>Editar perfil</li>
-                    <li>Cerrar sesión</li>
-                </ul>
-            </li>
-            <li></li>
-        </ul>
-    </nav>
 
-    <div id="contenedor">
-        <form id="vender-form">
-            <h1>Vende tu moto</h1>
+                    <div class="form-group d-flex flex-column">
+                        <label for="precio">Precio</label>
+                        <input type="text" id="precio" name="precio" placeholder="Digita el precio en pesos" class="input-simu" required>
+                    </div>
 
-            <div class="titulo-grande">
-                <div class="titulo">
-                    <h2>Identificación de la moto</h2>
+                    <div class="form-group d-flex flex-column">
+                        <label for="marca">Marca</label>
+                        <input type="text" id="marca" name="marca" placeholder="Ejemplo: Yamaha, Honda, AKT..." class="input-simu" required>
+                    </div>
 
-                    <label>Marca
-                        <div class="select">
-                            <select>
-                                <option>Seleccionar</option>
-                                <option value="">AKT</option>
-                                <option value="">Kawasaki</option>
-                                <option value="">Pulsar</option>
-                            </select>
-                        </div>
-                    </label> 
-
-                    <label>Cilindraje 
-                        <input type="text" placeholder="Escribe el tipo de Cilindraje">
-                    </label>
-
-                    <label>Placa 
-                        <input type="text" placeholder="Escribe el numero de la placa">
-                    </label>
-
-                    <label>VIN 
-                        <input type="text" placeholder="Escribe el numero de VIN ">
-                    </label>
-
-                    <label>Color 
-                        <input type="text" placeholder="Escribe el  Color">
-                    </label>
-
-                    <label>Modelo 
-                        <input type="text" placeholder="Escribe el modelo">
-                    </label>
-
-                    <label>Kilometraje 
-                        <input type="text" placeholder="Escribe el Kilometraje">
-                    </label>
-
-                    <label>Tipo de motor 
-                        <div class="select"><select>
-                            <option>Seleccionar</option>
-                            <option>2 tiempos</option>
-                            <option>4 tiempos</option>
-                        </select></div>
-                    </label>
-
-                    <label>Negociable
-                        <div class="select"><select>
-                            <option>Seleccionar</option>
-                            <option>Si</option>
-                            <option>No</option>
-                        </select></div>
-                    </label>
-
-                    <label>Precio 
-                        <input type="text" placeholder="Escribe el  precio de tu moto">
-                    </label>
-
-                    <label>Fotos de la moto (minimo una)</label>
-                    <input type="file" accept="image/*">
-                </div>
-                    
-                <div class="titulo" id="area">
-                    <h2>Estado físico</h2>
-
-                    <textarea placeholder="Describe brevemente el estado físico de la moto"></textarea>
-                </div>
-            </div>
-
-            <div class="boton-enviar"> 
-                <button class="enviar">Enviar Formulario</button>
-            </div>
-        </form>
-
-        <footer id="footerGrande">
-            <div id="menuFooter">
-                <div class="menusFooter">
-                  <h2>Productos y servicios</h2>
-
-                    <ul class="itemsFooter">
-                        <li><a href="motos.html" title="Inicio">Compra tu moto</a></li>
-                        <li><a href="vender.html" title="Vende tu moto">Vende tu moto</a></li>
-                        <li><a href="accesorios.html" title="Accesorios">Accesorios</a></li>
-                        <li><a href="reparacion-mantenimiento.html" title="Reparación y mantenimiento">Reparación</a></li>
-                    </ul>
-
-                    <div class="idioma">
-                        <select>
-                            <option>Español</option>
-                            <option>English</option>
+                    <div class="form-group d-flex flex-column">
+                        <label for="modelo">Modelo</label>
+                        <select name="modelo" id="modelo" required class="select-simu">
+                            <option value="seleccione">Seleccione</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
                         </select>
                     </div>
 
-                </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="referencia">Referencia</label>
+                        <input type="text" id="referencia" name="referencia" placeholder="Digita la referencia" class="input-simu" required>
+                    </div>
 
-                <div class="menusFooter">
-                    <h2>Contáctanos</h2>
+                    <div class="form-group d-flex flex-column">
+                        <label for="cilindraje">Cilindraje</label>
+                        <input type="text" id="cilindraje" name="cilindraje" placeholder="Digita el cilindraje" class="input-simu" required>
+                    </div>
 
-                    <ul class="itemsFooter">
-                        <li><strong>Dirección:</strong> Carrera 123</li>
-                        <li><strong>Teléfono:</strong> 234565</li>
-                        <li><strong>Celular:</strong> 3204900056</li>
-                    </ul>
+                    <div class="form-group d-flex flex-column">
+                        <label for="color">Color</label>
+                        <input type="text" id="color" name="color" placeholder="Ejemplo: Yamaha, Honda, AKT..." class="input-simu" required>
+                    </div>
 
-                    <ul id="redes">
-                        <li class="caja-redes"><a href="https://www.facebook.com/motoaventurajr" title="Facebook" target="_blank"><span class="fa fa-facebook fa-2x"></span></a></li>
-                        
-                        <li class="caja-redes"><a href="https://twitter.com/JDMOTOSTORE" title="Twitter"><span class="fa fa-twitter fa-2x"></span></a></li>
-                        
-                        <li class="caja-redes"><a href="tel:+573204900056" title="Whatsapp"><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                    </ul>
-                </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="kilometraje">Kilometraje</label>
+                        <input type="text" id="kilometraje" name="kilometraje" placeholder="Escribe el kilometraje" class="input-simu" required>
+                    </div>
 
-                <div class="menusFooter">
-                  <h2>Cuenta</h2>
-
-                    <ul class="itemsFooter">
-                        <li><a href="index.html" title="Cerrar sesión">Cerrar sesión</a></li>
-                    </ul>
-                </div>
+                    <button class="btn btn-block btn-simu-naranja" id="vender">Vender</button>
+                </form>
             </div>
-        </footer>
-    </div>	
-</body>
+
+            <footer id="contacto" class="pie-pagina row contenedor container-fluid mt-0 d-flex justify-content-between">
+                <div class="col-6">
+                    <div class="col-12"><strong>Dirección:</strong> Carrera 80 No. 42 C 62, Bogotá D.C.</div>
+                    <div class="col-12"><strong>Teléfono:</strong> 3456545</div>
+                    <div class="col-12"><strong>Celular:</strong> 3204900056</div>
+                </div>
+
+                <div class="row col-4">
+                    <div class="col-4">
+                        <a href="https://www.facebook.com/motoaventurajr" target="_blank" id="facebook" class="icon-red d-flex justify-content-center align-items-center fa fa-facebook ml-1 mr-1"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://twitter.com/JDMOTOSTORE" target="_blank" id="twitter" class="icon-red d-flex justify-content-center align-items-center fa fa-twitter ml-1 mr-1"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="tel:+573204900056" target="_blank" id="whatsapp" class="icon-red d-flex justify-content-center align-items-center fa fa-whatsapp ml-1 mr-1"></a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <select class="select-simu" name="idioma" id="idioma">
+                        <option value="espanol">Español</option>
+                        <option value="english">English</option>
+                    </select> 
+                </div>              
+            </footer>
+        </div>
+
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/validar-venta.js"></script>
+    </body>
 </html>

@@ -1,0 +1,25 @@
+.fondo-moto {
+    background-image: url('../images/vender.jpg');
+    /* height: 100px; */
+    padding: 10px;
+}
+
+#form-vender {
+    background-color: #1a1a1a;
+    padding: 25px !important;
+   
+}
+
+.input-simu {
+    padding: 7px !important;
+
+}
+
+.select, select {
+    width: 100% !important;
+}
+.filtros{
+	width: 100%
+	height: 900px;
+
+}

@@ -1,363 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>SIMU - Sistema de información para motos usadas</title>
-    <link rel="stylesheet" type="text/css" href="css/normalizar.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link rel="stylesheet" type="text/css" href="css/carrito.css">
-    <link rel="stylesheet" type="text/css" href="css/chat.css">
-    <link rel="stylesheet" type="text/css" href="css/iniciar-registrar.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta charset="UTF-8"/>
+    <title>Inicio - SIMU</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalizar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div id="chat">
-        Chat <a href="#chat" id="cerrar-chat"><span class="fa fa-close"></span></a>
-    </div>
+    <div class="contenedor container-fluid">
+        <nav class="barra-navegacion navbar navbar-expand-lg fixed-top d-flex align-items-center">
+            <a class="logo-simu-negativo navbar-brand" href="#">
+                <img src="images/logo-simu-negativo.png" alt="Logo SIMU" href="index.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav-barras fa fa-bars"></span>
+            </button>
 
-    <div id="califica-simu" class="fase-califica">
-        <span id="cerrar-califica" class="fa fa-close"></span>
-        <p>Califica a SIMU</p>
-        <div id="estrellas">
-            <div class="fa fa-star"></div>
-            <div class="fa fa-star"></div>
-            <div class="fa fa-star"></div>
-            <div class="fa fa-star"></div>
-            <div class="fa fa-star"></div>
-        </div>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="items-nav items-nav-activo nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
 
-    <script src="js/close.js" type="text/javascript" charset="utf-8" async defer></script>
+                    <li class="items-nav nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="productos/motos/index.html">Motos usadas</a>
+                            <a class="dropdown-item" href="productos/accesorios/index.html">Accesorios</a>
+                        </div>
+                    </li>
 
-    <nav id="navegador">
-        <ul class="sub-nav">
-            <li><img src="images/logo-simu-negativo.png" alt="Logo SIMU" id="logo">
-            </li>
-            <li class="menu-links menu-selected"><a href="index.html" title="Inicio">INICIO</a></li>
-            <li class="menu-links">
-                PRODUCTOS
 
-                <ul id="menu-productos">
-                    <li><a href="motos.html" title="Motos usadas">MOTOS USADAS</a></li>
-                    <li><a href="accesorios.html" title="Accesorios">ACCESORIOS</li></a>
+
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="vender.html">Vende tu moto</a>
+                    </li>
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="reparacion.html">Reparación y mantenimiento</a>
+                    </li>
+
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="#contacto">Contáctanos</a>
+                    </li>
                 </ul>
-            </li>
-            <li class="menu-links"><a href="vender.html" title="Vende tu moto">VENDE TU MOTO</a></li>
-            <li class="menu-links"><a href="modmantenimiento/index1.html" title="Reparación y mantenimiento">REPARACIÓN Y MANTENIMIENTO</a></li>
-            <li class="menu-links"><a href="nosotros.html" title="Nosotros" class="headerLinks">NOSOTROS</a></li>
-        </ul>
 
-        <ul class="sub-nav">
-            <li>
-                <a href="#abrirCarrito" title="Carrito de compra">
-                    <div id="carrito" class="boton fa fa-shopping-cart fa-2x">
-                        <div id="numero">0</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <span class="fa fa-notification"></span>
-            </li>
-            <li class="nav-inireg">
-                <a href="#iniciarSesion" title="Inicia sesión">Inicia sesión</a>
-            </li>
-            <li class="nav-inireg">
-                <a href="#registrate" title="Registrate">Registrate</a>
-            </li>
-        </ul>
-    </nav>
+                <hr class="linea-blanca">
 
-    <div id="contenedor">
-        <header id="encabezado">
-            
-
-            <div id="unete">
-                <h2>Únete a una nueva aventura</h2>
-                <div id="uneteBotones">
-                    <a href="#registrate" title="Regístrate"><button class="inicioRegistro">Regístrate</button></a>
-                    <a href="#iniciarSesion" title="Inicia sesión"><button class="inicioRegistro">Inicia sesión</button></a>
-                </div>
-                
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="items-nav nav-item d-flex justify-content-lg-center align-items-center">
+                        <button class="boton-navbar nav-item" type="button" data-toggle="modal" data-target="#carrito">
+                                <span class="text-left fa fa-shopping-cart"></span><span class="text-navright">&nbsp;Carrito de compra</span>
+                        </button>                            
+                    </li>
+                    <li class="items-nav nav-item d-flex justify-content-lg-center align-items-center">
+                        <button class="boton-navbar nav-item" type="button" data-toggle="modal" data-target="#registrarse">
+                                <span class="fa fa-user-plus"></span><span class="text-navright">&nbsp;Registrate</span>
+                        </button>
+                    </li>
+                    <li class="items-nav nav-item d-flex justify-content-lg-center align-items-center">
+                        <button class="boton-navbar nav-item" type="button" data-toggle="modal" data-target="#inicia-sesion">
+                                <span class="fa fa-sign-in"></span><span class="text-navright">&nbsp;Iniciar sesión</span>
+                        </button>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
-            <section id="simu-ofrece">
-                <h1>SIMU OFRECE:</h1>
+        <header class="titulo contenedor container-fluid d-flex justify-content-md-end justify-content-center">
+
+            <!-- Video fondo -->
+            <video class="video-simu" playsinline autoplay muted loop>
+                <source src="videos/homepage.mp4" type="video/mp4"/>
+                <source src="videos/homepage.ogg" type="video/ogg"/>
+            </video>
+            <!-- fin video fondo -->
+
+            <section class="unete d-flex flex-column align-self-end align-self-md-center mr-md-4 col-md-5 col-lg-4 col-xl-3 col m-sm-2">
+                <div class="row d-flex justify-content-center">
+                    <h1 id="unete-titulo">Únete a una nueva aventura</h1>
+                </div>
+                <div class="botones row d-flex justify-content-center">
+                    <button class="btn btn-simu-naranja m-1" type="button" data-toggle="modal" data-target="#registrarse"><span class="fa fa-user-plus"></span> Regístrate</button>
+                    <button class="btn btn-simu-naranja m-1" type="button" data-toggle="modal" data-target="#inicia-sesion"><span class="fa fa-sign-in"></span> Inicia sesión</button>
+                </div>
             </section>
         </header>
 
-        <div class="productos-servicios">
-            <section class="descripcion">
+        <div id="simu-ofrece" class="col d-flex align-items-center justify-content-center">
+            <h1 class="d-flex align-self-center"><span class="fa fa-motorcycle"></span>&nbsp;SIMU OFRECE</span></h1>
+        </div>
+
+        <div id="ofrece2" class="simu-ofrece contenedor container-fluid d-flex row">
+            <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Motos usadas</h2>
 
                 <p>Las motos usadas ofrecidas en SIMU pasan por un estricto control de documentación legal para que puedan ser ofrecidas. Tu mismo puedes vender tu moto</p>
 
-                <a href="motos.html" title="Ver más"><button class="prod-serv">
-                    Ver más
-                </button></a>
+                <div class="d-flex flex-row">
+                    <a href="productos/motos/index.html"><button class="btn-simu-naranja m-1">Comprar</button></a>
+                    <a href="vender.html"><button class="btn-simu-naranja m-1">Vender</button></a>
+                </div>
+                
             </section>
         </div>
-        
-        <div class="productos-servicios">
-            <section class="descripcion">
+
+        <div id="ofrece3" class="simu-ofrece contenedor container-fluid d-flex row">
+            <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Cascos</h2>
 
-                <p>Los cascos son excenciales para la seguridad del motociclista, previenene</p>
-
-                <a href="accesorios.html" title="Ver más"><button class="prod-serv">
-                    Ver más
-                </button></a>
+                <p>Los cascos son excenciales para la seguridad del motociclista, previene muchas fatalidades</p>
+                <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
 
-        <div class="productos-servicios">
-            <section class="descripcion">
+        <div id="ofrece4" class="simu-ofrece contenedor container-fluid d-flex row">
+            <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Guantes</h2>
 
-                <p>Los guantes son un elemento clave para el motociclista...</p>
-
-                <a href="accesorios.html" title="Ver más"><button class="prod-serv">
-                    Ver más
-                </button></a>
+                <p>Los guantes son un elemento clave para la protección de las manos motociclista.</p>
+                <a href="accesorios/index.html"><button class="btn-simu-naranja">Ver más</button></a>
             </section>
         </div>
 
-        <div class="productos-servicios">
-            <section class="descripcion">
+        <div id="ofrece5" class="simu-ofrece contenedor container-fluid d-flex row">
+            <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <h2>Reparación y mantenimiento</h2>
 
-                <p>SIMU ofrece el servicio de mantenimiento blah blah blah</p>
+                <p>SIMU ofrece el servicio de seguimiento del mantenimiento y/o reparación de la moto.</p>
 
-                <a href="#" title="Ver más"><button class="prod-serv">
-                    Ver más
-                </button></a>
+                <button class="btn-simu-naranja">Ver más</button>
             </section>
         </div>
-            
-        <footer id="footerGrande">
-            <div id="menuFooter">
-                <div class="menusFooter">
-                  <h2>Productos y servicios</h2>
 
-                    <ul class="itemsFooter">
-                        <li><a href="motos.html" title="Inicio">Compra tu moto</a></li>
-                        <li><a href="vender.html" title="Vende tu moto">Vende tu moto</a></li>
-                        <li><a href="accesorios.html" title="Accesorios">Accesorios</a></li>
-                        <li><a href="reparacion-mantenimiento.html" title="Reparación y mantenimiento">Reparación</a></li>
-                    </ul>
+        <div id="nosotros" class="col d-flex align-items-center justify-content-center">
+            <h1 class="d-flex align-self-center">NOSOTROS</h1>
+        </div>
 
-                    <div class="idioma">
-                        <select>
-                            <option>Español</option>
-                            <option>English</option>
-                        </select>
-                    </div>
+        <div id="nosotros-div" class="simu-ofrece contenedor container-fluid d-flex row">
+            <section class="descripcion col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <img src="images/moto-aventura.jpg" alt="Moto Aventura logo" class="moto-aventura img-fluid mb-2">
+
+                <p>Moto Aventura lleva 5 años ofreciendo el servicio de compraventa de motos usadas, venta de accesorios y reparación de motos.</p>
+
+                <p>Comprometida en seguir creciendo cada día más ofreciendo un mejor servicio para tí.</p>
+            </section>
+        </div>
+
+        <footer id="contacto" class="pie-pagina row contenedor container-fluid mt-0 d-flex justify-content-between">
+            <div class="col-6">
+                <div class="col-12"><strong>Dirección:</strong> Carrera 80 No. 42 C 62, Bogotá D.C.</div>
+                <div class="col-12"><strong>Teléfono:</strong> 3456545</div>
+                <div class="col-12"><strong>Celular:</strong> 3204900056</div>
+            </div>
+
+            <div class="row col-4">
+                <div class="col-4">
+                    <a href="https://www.facebook.com/motoaventurajr" target="_blank" id="facebook" class="icon-red d-flex justify-content-center align-items-center fa fa-facebook ml-1 mr-1"></a>
                 </div>
-
-                <div class="menusFooter">
-                    <h2>Contáctanos</h2>
-
-                    <ul class="itemsFooter">
-                        <li><strong>Dirección:</strong> Carrera 123</li>
-                        <li><strong>Teléfono:</strong> 234565</li>
-                        <li><strong>Celular:</strong> 3204900056</li>
-                    </ul>
-
-                    <ul id="redes">
-                        <li class="caja-redes"><a href="https://www.facebook.com/motoaventurajr" title="Facebook" target="_blank"><span class="fa fa-facebook fa-2x"></span></a></li>
-                        
-                        <li class="caja-redes"><a href="https://twitter.com/JDMOTOSTORE" title="Twitter"><span class="fa fa-twitter fa-2x"></span></a></li>
-                        
-                        <li class="caja-redes"><a href="tel:+573204900056" title="Whatsapp"><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                    </ul>
+                <div class="col-4">
+                    <a href="https://twitter.com/JDMOTOSTORE" target="_blank" id="twitter" class="icon-red d-flex justify-content-center align-items-center fa fa-twitter ml-1 mr-1"></a>
                 </div>
-
-                <div class="menusFooter">
-                  <h2>Cuenta</h2>
-
-                    <ul class="itemsFooter">
-                        <li><a href="#registrate" title="Regístrate">Regístrate</a></li>
-                        <li><a href="#iniciarSesion" title="Inicia sesión">Inicia sesión</a></li>
-                    </ul>
+                <div class="col-4">
+                    <a href="tel:+573204900056" target="_blank" id="whatsapp" class="icon-red d-flex justify-content-center align-items-center fa fa-whatsapp ml-1 mr-1"></a>
                 </div>
             </div>
+
+            <div class="col-2">
+                <select class="select-simu" name="idioma" id="idioma">
+                    <option value="espanol">Español</option>
+                    <option value="english">English</option>
+                </select> 
+            </div>              
         </footer>
     </div>
 
-    <div id="iniciarSesion" class="modalBackground">
-        <div class="modalContent">
-            <a href="#closeModal" title="Close" id="closeModal"><span class="fa fa-close"></span></a>
+    <!-- MODALES -->
 
-            <h1>Inicia Sesión</h1>
-
-            <form class="form-modal">
-                <div class="fila">
-                    <label>Email o usuario</label>
-                    <input type="text" placeholder="Escribe tu email o usuario">
+    <!-- Carrito de compra -->
+    <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="carritoDeCompra" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Carrito de compra</h3>
+                    <button type="button" class="cerrar-modal close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
                 </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="productos-carrito row">
+                            <div class="row mt-3 mb-3">
+                                <div class="col-8 col-md-7 col-lg-4">
+                                    <img src="images/accesorios/b.png" alt="Bajaj" class="img-fluid">
+                                </div>
+                                <div class="col-4 col-md-5 col-lg-8">
+                                    <div class="row d-flex mt-2 mt-lg-auto mb-2 mb-lg-auto">
+                                        <div class="col-12 col-lg-4 d-flex align-items-center flex-column mb-3 mt-lg-auto mb-lg-auto justify-content-start">
+                                            <p class="nombre-producto m-0 text-left">Baul maletero</p>
+                                            <p class="precio-producto m-0 text-left">$<span class="precio-producto">200000</span></p>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-end justify-content-lg-center align-items-center mt-lg-auto mb-lg-auto">
+                                            <div class="col-1 mr-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-plus"></span>
+                                            </div>
+                                            <div class="cantidad col-1 d-flex justify-content-center">
+                                                <input type="text" class="input-simu cantidad-producto" value="1" maxlength="2">
+                                            </div>
+                                            <div class="col-1 ml-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-minus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center align-items-end align-items-md-start">
+                                                <span class="botones-carrito fa fa-trash"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-end mt-5 mt-lg-auto mb-lg-auto">
+                                            $<span class="precio-total">200000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="fila">
-                    <label>Contraseña</label>
-                    <input type="text" placeholder="Escribe tu Contraseña">
-                </div>
-
-                <div class="boton-bottom">
-                    <button><a href="admin/MenuHamburguesa.html">Inicia sesión</a></button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="registrate" class="modalBackground">
-        <div class="modalContent">
-            <a href="#closeModal" title="Close" id="closeModal"><span class="fa fa-close"></span></a>
-
-            <h1>Regístrate</h1>
-
-            <form>
-                <div class="fila">
-                   <label>Nombre de usuario</label>
-                   <input id="usuario-input" type="text" placeholder="Escribe tu usuario"><span class="fa fa-check-circle"></span>
-                </div>
-
-                <div class="fila">
-                   <label for="">Nombres </label>
-                   <input type="text" placeholder="Escribe tus nombres">
-                </div>
-
-                <div class="fila">
-                    <label>Apellidos</label>
-                    <input type="text" placeholder="Escribe tus Apellidos">
-                </div>
-
-                <div class="fila">
-                    <label for="">Tipo de documento</label> 
-                    <div class="select"><select>
-                        <option>Seleccionar</option>
-                        <option value="">Cedula de Ciudadania</option>
-                        <option value="">Pasaporte</option>
-                        <option value="">Cedula de Extranjeria</option>
-                    </select></div>
-                </div>
-
-                <div class="fila">
-                    <label>Numero de documento</label>
-                    <input type="text" placeholder="Digita tu documento">
-                </div>
-
-                <div class="fila">
-                    <label for="">Correo electrónico</label>
-                    <input type="text" placeholder="Escribe tu correo electrónico" >
-                </div>
-
-                <div class="fila">
-                    <label>Confirma correo electrónico</label>
-                    <input type="text" placeholder="Escribe de nuevo tu correo" >
-                </div>
-
-                <div class="fila">
-                    <label>Contraseña</label>
-                    <input type="text" placeholder="Escribe tu Contraseña">
-                </div>
-
-                <div class="fila">
-                    <label>Confirma tu contraseña</label>
-                    <input type="text" placeholder="Escribe de nuevo tu contraseña" >
-                </div>
-
-                <div class="fila"> 
-                    <label for="">Teléfono de contacto</label>
-                    <input type="text" placeholder="Escribe tu numero de teléfono" >
-                </div>
-
-                <div class="boton-bottom">
-                    <button>Registrarse</button>
-                    <input type="reset" value="Limpiar">
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="abrirCarrito" class="modalBackground">
-        <div class="modalContent">
-            <a href="#closeModal" title="Close" id="closeModal"><span class="fa fa-close"></span></a>
-
-            <h1>Carrito de compra</h1>
-
-            <div id="carritoWrapper">
-                <div id="carro-productos">
-                    <div class="carroProd">
-                        <img src="images/accesorios/b.jpg" alt="Baul maletero">
-
-                        <div class="prodPrecio">
-                            <div class="nombreProd">Baul maletero</div>
-                            <div class="carroPrecioProd">$200.000</div>
+                            <div class="row mt-3 mb-3">
+                                <div class="col-8 col-md-7 col-lg-4">
+                                    <img src="images/motos/bajaj-ejemplo.jpg" alt="Bajaj" class="img-fluid">
+                                </div>
+                                <div class="col-4 col-md-5 col-lg-8">
+                                    <div class="row d-flex mt-2 mt-lg-auto mb-2 mb-lg-auto">
+                                        <div class="col-12 col-lg-4 d-flex align-items-center flex-column mb-3 mt-lg-auto mb-lg-auto justify-content-start">
+                                            <p class="nombre-producto m-0 text-left">Pulsar</p>
+                                            <p class="precio-producto m-0 text-left">$<span class="precio-producto">2000000</span></p>
+                                        </div>
+                                        <div class="col-12 col-lg-4 d-flex justify-content-end justify-content-lg-center align-items-center mt-lg-auto mb-lg-auto">
+                                            <div class="col-1 mr-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-plus"></span>
+                                            </div>
+                                            <div class="cantidad col-1 d-flex justify-content-center">
+                                                <input type="text" class="input-simu cantidad-producto" value="2" maxlength="2">
+                                            </div>
+                                            <div class="col-1 ml-1 d-flex justify-content-center">
+                                                <span class="botones-carrito fa fa-minus"></span>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-center align-items-end align-items-md-start">
+                                                <span class="botones-carrito fa fa-trash"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-end mt-5 mt-lg-auto mb-lg-auto">
+                                            $<span class="precio-total">4000000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="addRemove">
-                            <span class="fa fa-plus"></span>
-                            <input type="text" value="1">
-                            <span class="fa fa-minus"></span>
+                        
+                        <div class="carrito-totales row d-flex justify-content-end">
+                            <div class="footer-carrito col-auto d-flex flex-column">
+                                <p><strong>Subtotal</strong></p>
+                                <p><strong>Impuestos</strong></p>
+                                <p><strong>Total</strong></p>
+                            </div>
+                            <div class="footer-carrito col-auto d-flex justify-content-end flex-column">
+                                <p>$<span class="subtotal-carrito">6620000</span></p>
+                                <p>$<span class="impuestos-carrito">1059200</span></p>
+                                <p>$<span class="total-carrito">7679200</span></p>
+                            </div>
                         </div>
-
-                        <div class="prodTotal">$200.000</div>
-
-                        <div class="removeProduct"><span class="fa fa-trash"></span></div>
                     </div>
-
-                    <div class="carroProd">
-                        <img src="images/motos/bajaj-ejemplo.jpg" alt="Pulsar">
-
-                        <div class="prodPrecio">
-                            <div class="nombreProd">Pulsar</div>
-                            <div class="carroPrecioProd">$2'000.000</div>
-                        </div>
-
-                        <div class="addRemove">
-                            <span class="fa fa-plus"></span>
-                            <input type="text" value="2">
-                            <span class="fa fa-minus"></span>
-                        </div>
-
-                        <div class="prodTotal">$4'000.000</div>
-
-                        <div class="removeProduct"><span class="fa fa-trash"></span></div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-simu-naranja m-1">Comprar</button>
+                        <input type="text" placeholder="Ingresa código de promoción" class="input-simu m-1">                                       
                     </div>
-                </div>
-
-                <hr id="carro-linea"></hr>
-
-                <div id="carro-resultado">
-                    <div id="carrito-conceptos">
-                        <ul>
-                            <li>Subtotal</li>
-                            <li>Impuestos</li>
-                            <li>Total</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li>$6’620.000</li>
-                            <li>$1’059.200</li>
-                            <li>$7’679.200</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="comprarCodigo">
-                <button class="comprar">Comprar</button>
-
-                <div id="codigoPromo">
-                    <label>Código de promoción</label>
-                    <input type="text" placeholder="Escribe el código">
-                </div>
+                </form>
             </div>
         </div>
     </div>
+
+    <!-- Iniciar sesión -->
+    <div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog" aria-labelledby="iniciarSesion" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Inicia sesión</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <form name="form-login" action="" method="post">
+                    <div class="modal-body">
+                        <div class="container">
+                            <section class="row">
+                                <article class="col">
+                                    <div class="form-group d-flex flex-column">
+                                       <label for="">Email o usuario</label>
+                                       <input type="text" class="input-simu login-input" id="correo" placeholder="Escribe tu email o usuario" required>
+                                    </div>
+                                    <div class="form-group d-flex flex-column">
+                                       <label for="">Contraseña</label>
+                                       <input type="password" class="input-simu login-input" id="contrasena" placeholder="Escribe tu contraseña" required>
+                                    </div>
+                                </article>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <input class="btn-simu-naranja" type="submit" value="Inicia sesión" id="btn-login" name="btn-login"> -->
+                            <button class="btn-simu-naranja" id="btn-login">
+                                Iniciar sesión
+                            </button>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registrarse -->
+    <div class="modal fade" id="registrarse" tabindex="-1" role="dialog" aria-labelledby="registrate" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Regístrate</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close cerrar-modal" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <form action="">
+                    <div class="modal-body">
+                        <div class="row col-12 mt-2 mb-2">
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Nombres</label></div>
+                                <div class="col"> <input type="text" class="input-simu " placeholder="Escribe tu nombre" required></div>            
+                            </div>
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Apellidos</label></div>
+                                <div class="col"><input type="text" class="input-simu " placeholder="Escribe tus apellidos" required></div>
+                            </div>
+                        </div>
+
+
+                        <div class="row col-12 mt-2 mb-2">
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="Tipodocumento">Tipo de documento</label></div>
+                                <div class="col"> <select class="select-simu" id="Tipo" placeholder="Seleccionar" required>
+                                    <option >Seleccionar</option>
+                                    <option>Cedula de ciudadanía</option>
+                                    <option>Pasaporte</option>
+                                    <option>Extranjería</option>
+                                </select></div>
+                            </div>
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Numero de documento</label></div>
+                                <div class="col"><input type="text" class="input-simu " name="num doc " placeholder="Escribe tu numero de documento" required></div>
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mt-2 mb-2">
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Correo electrónico</label></div>
+                                <div class="col"><input type="email" class="input-simu " name="correo" placeholder="Escribe tu correo" required></div>
+                            </div>
+                            <div class="col ml-1 mr-1">
+                                <div class="col"> <label for="">Confirma correo </label></div>
+                                <div class="col"><input type="email" class="input-simu " name="confirma correo" placeholder="Confirma tu correo" required></div>
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mt-2 mb-2">
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Contraseña</label></div>
+                                <div class="col"><input type="password" class="input-simu " name="contraseña" placeholder="Escribe tu contraseña" required></div>
+                            </div>
+                            <div class="col ml-1 mr-1">
+                                <div class="col"><label for="">Confirma contraseña</label></div>
+                                <div class="col"><input type="password" class="input-simu " name="confirma contraseña" placeholder="Confirma tu contraseña" required></div>
+                            </div>
+                        </div>
+
+                        <div class="row col-12">
+                            <div class="col-6 ml-1">
+                                <div class="col"><label for="">Teléfono</label></div>
+                            <div class="col"> <input type="text" class="input-simu " name="telefono" placeholder="Escribe tu teléfono" required></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn-simu-naranja" type="submit" value="Registrarse" onclick="iniciar()">
+                        <input type="reset" class="btn-simu-naranja" value="Limpiar campos">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin modales -->
+
+    <script src="js/jquery-3.2.1.slim.min (2).js"></script>
+    <script src="js/popper.min (2).js"></script>
+    <script src="js/bootstrap.min (2).js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/iniciar.js"></script>
 </body>
 </html>

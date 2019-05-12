@@ -1,222 +1,137 @@
-#encabezado {
-    height: 800px;
-    background-image: url(../images/fotocamino.jpg);
+.titulo {
+    /* imagen */
+    /* background-image: url('../images/fotocamino.jpg');
+    background-size: 100%;
+    background-attachment: fixed; */
+    /* fin imagen */
+    height: 300px;
 }
 
-#unete {
-    color: white;
-    bottom: 300px;
-    right: 100px;
+.video-simu {
+    width: 100%;
+    z-index: -100;
     position: absolute;
-    background-color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    padding: 35px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgba(255,255,255,.1)
 }
 
-#unete h2 {
-    margin-bottom: 10px;
+.unete {
+    background-color: rgba(0,0,0,0.7);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgba(255,255,255,.1);
+    padding: 25px !important;
+    position: relative;
+
+}
+
+#unete-titulo {
     font-size: 30px;
-    font-weight: normal;
-}
-
-button.inicioRegistro {
-    flex-direction: row;
-    margin: 0 10px;
-}
-
-button.inicioRegistro, button.componentes, button.prod-serv {
-    padding: 10px;
-    border: 2px solid rgba(255,255,255,.4);
-    border-radius: 5px;
-    background-color: transparent;
-    color: #fff;
-    transition: .3s;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button.inicioRegistro:hover, button.componentes:hover, button.prod-serv:hover {
-    background-color: orange;
-}
-
-
-
-div.fase-califica {
-    position: fixed;
-    left: 0;
-    background-color: orange;
-    padding: 20px 26px 16px 40px;
-    border-radius: 0 5px 5px 0;
-    z-index: 300;
-    font-weight: bold;
-}
-
-#fase-dos-link {
-    top: 500px;
-    width: fit-content;
-    font-size: .7em;
-}
-
-#califica-simu {
-    top: 200px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.fase-califica span.fa {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.fase-califica span.fa:hover {
-    color: #fff;
-}
-
-#estrellas * {
-    transition: .3s;
-}
-
-#estrellas *:hover {
-    color: #fff;
+    text-align: center !important;
 }
 
 #simu-ofrece {
-    width: 100%;
-    height: 200px;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
+    height: 100px;
+    background-color: #000;
 }
 
-#simu-ofrece h1 {
-    font-size: 50px;
-}
-
-.productos-servicios {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    background-attachment: fixed;
+.simu-ofrece {
     background-size: 100%;
     background-position: center center;
-    transition: 1.5s;
+    transition: 1s;
 }
 
-.productos-servicios:hover {
-    background-size: 115%;
+.simu-ofrece:hover {
+    background-size: 125%;
 }
 
-.productos-servicios:nth-child(2) {
-    background-image: url(../images/motos/bajaj-ejemplo.jpg); 
-}
-
-.productos-servicios:nth-child(3) {
-    background-image: url(../images/cascos.jpg);
-}
-
-.productos-servicios:nth-child(4) {
-    background-image: url(../images/guantes.jpg);
-}
-
-.productos-servicios:nth-child(odd) {
+.simu-ofrece:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-.productos-servicios:nth-child(5) {
-    background-image: url(../images/mante.jpg);
-}
-
-section.descripcion {
-    width: 50%;
+.descripcion {
     background-color: rgba(0,0,0,.7);
-    display: flex;
-    padding: 25px;
-    height: 500px;
+    padding: 25px !important;
+    height: 350px;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
-section.descripcion h2 {
-    font-size: 2em;
-    margin-bottom: 25px;
+.descripcion h2, .descripcion p {
+    margin-bottom: 25px !important;
 }
 
-section.descripcion p {
-    font-size: 1em;
-    margin-bottom: 25px;
+#ofrece2 {
+    background-image: url('../images/motos/bajaj-ejemplo.jpg'); 
 }
 
-#fase-dos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 50px;
-    height: fit-content;
-    width: 100%;
-    background-color: rgba(0,0,0,.95);
-    color: #fff;
+#ofrece3 {
+    background-image: url('../images/cascos.jpg');
 }
 
-#fase-dos h2 {
-    font-size: 27px;
-    margin-bottom: 0;
+#ofrece4 {
+    background-image: url('../images/guantes.jpg');
 }
 
-#sub-fase-dos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 80%;
+#ofrece5 {
+    background-image: url('../images/mante.jpg');
 }
 
-div.contenedores {
-    padding: 50px 25px 0px 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#nosotros {
+    height: 100px;
+    background-color: #000;
 }
 
-div.contenedores h2.fa {
-    margin-bottom: 15px !important;
-    font-size: 50px !important;
+#nosotros-div {
+    background-image: url('../images/moto-aventura2.jpg');
 }
 
-button.componentes:hover {
-    background-color: orange;
+.moto-aventura {
+    width: 50%;
+    height: auto;
 }
 
-.entregables-modal h2 {
-    margin: 15px 0px;
+/* Volver arriba */
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
 }
 
-.entregables-modal a {
-    font-family: "Oswald";
+@media (min-width: 768px) and (max-width: 1199px) {
+    .titulo,
+    /* .video-simu, */
+    .descripcion {
+        height: 500px;
+        font-size: 20px;
+    }
+
+    .moto-aventura {
+        width: 50%;
+        height: auto;
+    }
 }
 
-.entregables-modal a:hover {
-    border-bottom: 1px dotted #fff;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .moto-aventura {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo/* , .video-simu */ {
+        height: 700px;
+    }
+
+    .descripcion {
+        font-size: 20px;
+        height: 500px;
+    }
+
+    .moto-aventura {
+        width: auto;
+        height: auto;
+    }
 }

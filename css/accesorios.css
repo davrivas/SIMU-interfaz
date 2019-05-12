@@ -1,25 +1,29 @@
-#contenedor {
+.principal {
+    background-image: url('../images/accesorios/m.jpg') !important;
+}
+
+.foto {
+    background-color: #1a1a1a;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 1em;
+    border-radius: .2rem;
+    color: #fff;
+}
+
+.foto-block{
+    font-size: 1em;
+    padding: 0.6em;
+   
+}
+
+.foto-img-top {
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 
-#encabezado {
-    height: 420px;
-    background-image: url(../images/accesorios/cp.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-#leyenda {
-    color: white;
-    bottom: 15px;
-    right: 15px;
-    position: absolute;
-    background-color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    padding: 25px;
-}
-
-#leyenda h1 {
-    font-size: 40px;
+.foto-title {
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 1.2857em;
 }

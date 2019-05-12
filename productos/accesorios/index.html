@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesorios</title>
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../css/normalizar.css">
+    <link rel="stylesheet" href="../../css/nav-bar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/productos.css">
+    <!-- <link rel="stylesheet" href="../../css/motos.css"> -->
+    <link rel="stylesheet" href="../../css/accesorios.css">
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor container-fluid">
+        <nav class="barra-navegacion navbar navbar-expand-lg fixed-top d-flex align-items-center">
+            <a class="logo-simu-negativo navbar-brand" href="#">
+                <img src="../../images/logo-simu-negativo.png" alt="Logo SIMU" href="../../index.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav-barras fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="items-nav items-nav-activo nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="items-nav nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="../index.html">Motos usadas</a>
+                            <a class="dropdown-item" href="/index.html">Accesorios</a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="../../vender.html">Vende tu moto</a>
+                    </li>
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="../../reparacion.html">Reparación y mantenimiento</a>
+                    </li>
+
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="../../index.html#nosotros">Nosotros</a>
+                    </li>
+                    
+                    <li class="items-nav nav-item">
+                        <a class="nav-link" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+
+                <hr class="linea-blanca">
+
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="items-nav nav-item d-flex justify-content-lg-center align-items-center">
+                        <button class="boton-navbar nav-item" type="button" data-toggle="modal" data-target="#carrito">
+                                <span class="text-left fa fa-shopping-cart"></span><span class="text-navright">&nbsp;Carrito de compra</span>
+                        </button>                            
+                    </li>
+                    <li class="items-nav nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="fa fa-user-circle"></span><span class="text-navright">&nbsp;Usuario</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="editar-perfil.html">Editar perfil</a>
+                            <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="principal container-fluid d-flex justify-content-md-end justify-content-center">
+
+            <section class="titulo-prod d-flex flex-column justify-content-center align-self-end m-md-4 col-md-5 col-lg-4 col-xl-3 col m-sm-2">
+                <h1>Accesorios</h1>
+            </section>
+
+        </header>
+
+        <div class="division">
+          
+        </div>
+
+    <main class="productos row d-flex justify-content-md-around justify-content-center">
+
+            <!-- filtros collapse mobile -->
+      
+<!-- FILTROS -->
+        <aside class="comp-prod col-12 col-md-6 col-lg-4 mt-4 mb-4 ">  
+            <!-- TITULO FILTROS -->
+            
+                    <h1 class="text-center">Filtros</h1>
+            <hr class="linea-prod mt-2 mb-2">
+  
+
+            <form action="" class="filtro ">
+
+                 <!-- 1 -->
+
+                 <div class="row mt-4 text-center">
+                    <article class="col-md-6">
+                        <label for=""><strong>Tipo</strong></label>
+                    </article>
+                    <article class="col-md-6">
+                        <select name="" id="" class="select-simu">
+                            <option>Cualquiera</option>
+                            <option>Cascos</option>
+                            <option>Maleteros</option>
+                            <option>Sliders</option>
+                            <option>Guantes</option>
+                        </select>
+                    </article>
+                     
+                 </div>
+
+                <!-- 2 -->
+
+                <div class="row mt-4 text-center">
+                        <div class="col-12">
+                           <p><strong>Rango de Precio</strong></p>
+                        </div>
+                </div>
+
+                <div class="row text-center">
+
+                    <article class="col-md-6">
+                        <label for=""><strong>Precio minimo</strong></label>
+                            <select name="" id="" class="select-simu">
+                                <option>0</option>
+                                <option>$500.000</option>
+                                <option>$1'000.000</option>
+                                <option>$3'000.000</option>
+                                <option>$5'000.000</option>
+                                <option>$10'000.000</option>
+                                <option>$20'000.000</option>
+                            </select>
+                    </article>
+                    <article class="col-md-6">
+                        <label for=""><strong>Precio maximo</strong></label>
+                            <select name="" id="" class="select-simu">
+                                <option>0</option>
+                                <option>$1'000.000</option>
+                                <option>$3'000.000</option>
+                                <option>$5'000.000</option>
+                                <option>$10'000.000</option>
+                                <option>$20'000.000</option>
+                                <option>+ $20'000.000</option>
+                            </select>
+                    </article>
+                </div>
+                      
+                        
+                </form>
+                    
+            </form>
+            <!-- FIN TITULO FILTROS -->
+
+
+        </aside>
+      
+            <!-- hacer producto foto toda en mobile -->
+
+        <section class="col-md-6 mt-4 mb-5 resultados">
+
+            <!-- 1 -->
+
+            
+                    <h1 class="text-center">Resultados</h1>
+            
+            <hr class="linea-prod mt-2 mb-2">
+
+            <div class="row foto1">
+
+                 <div class="col-sm-10 col-md-6">
+
+                    <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="../../images/accesorios/b.png">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Baul maletero</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3"> $ 300.000 <i class="fa fa-shopping-cart" aria-hidden="true" onclick="agregar()"></i></h5>
+                           </div>
+                        
+                      </div>
+                   
+                    </article>
+
+                </div>
+                 <div class="col-sm-10 col-md-6 ">
+
+                    <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="../../images/accesorios/i.png">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Impermeable</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3"> $ 38.000<i class="fa fa-shopping-cart" aria-hidden="true" onclick="agregar()"></i></h5>
+                           </div>
+                        
+                      </div>
+                   
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="row foto2">
+
+                 <div class="col-sm-10 col-md-6">
+
+                    <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="../../images/accesorios/m.jpg">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Mascara antipolucion</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3"> $ 12'000.000 <i class="fa fa-shopping-cart" aria-hidden="true" onclick="agregar()"></i></h5>
+                           </div>
+                        
+                      </div>
+                   
+                    </article>
+
+                </div>
+                 <div class="col-sm-10 col-md-6 ">
+
+                    <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="../../images/accesorios/cp.png">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Casco protector</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3"> $ 450.000<i class="fa fa-shopping-cart" aria-hidden="true" onclick="agregar()"></i></h5>
+                           </div>
+                        
+                      </div>
+                   
+                    </article>
+
+                </div>
+
+            </div>
+
+          
+        
+           
+
+        </section>
+
+    </main>
+
+        <footer id="contacto" class="pie-pagina row contenedor container-fluid mt-0 d-flex justify-content-between">
+            <div class="col-6">
+                <div class="col-12"><strong>Dirección:</strong> Carrera 80 No. 42 C 62, Bogotá D.C.</div>
+                <div class="col-12"><strong>Teléfono:</strong> 3456545</div>
+                <div class="col-12"><strong>Celular:</strong> 3204900056</div>
+            </div>
+
+            <div class="row col-4">
+                <div class="col-4">
+                    <a href="https://www.facebook.com/motoaventurajr" target="_blank" id="facebook" class="icon-red d-flex justify-content-center align-items-center fa fa-facebook ml-1 mr-1"></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://twitter.com/JDMOTOSTORE" target="_blank" id="twitter" class="icon-red d-flex justify-content-center align-items-center fa fa-twitter ml-1 mr-1"></a>
+                </div>
+                <div class="col-4">
+                    <a href="tel:+573204900056" target="_blank" id="whatsapp" class="icon-red d-flex justify-content-center align-items-center fa fa-whatsapp ml-1 mr-1"></a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <select class="select-simu" name="idioma" id="idioma">
+                    <option value="espanol">Español</option>
+                    <option value="english">English</option>
+                </select> 
+            </div>              
+        </footer>
+    </div>
+
+    <script src="../../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/sweetalert2.min.js"></script>
+    <script src="../../js/productos.js"></script>
+</body>
+</html>

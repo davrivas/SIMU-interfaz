@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Administrador</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos3.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+      <div class="container-fluid">
+        <!--Parte superior-->
+            <section class="row text-center  arriba">
+
+                <div class="col-md-2 encabezado1">SIMU</div>
+                <div class="col-md-10 encabezado2">Control de Inventarios</div>
+
+            </section>
+        <!-- Fin parte superior-->
+
+        <!--col centrales-->
+            <section class="row medio">
+
+                <div class="col-md-2 medio1"> 
+
+                  <!--carta de administrador-->
+
+                  <article class="card mt-5  foto">
+
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/03/29/21/27/motorcycle-2186589__340.jpg">
+
+                      <div class="card-block">
+                           <h4 class="card-title mt-3 d-flex justify-content-center"><strong>Jhon</strong></h4>
+
+                           <div class="meta d-flex justify-content-center">
+                                <h5 class="mb-3">Admnistrador</h5>
+                           </div>
+                        
+                      </div>
+                   
+                  </article>
+                    <!--Fin carta de administrador-->
+                    <!---->
+                    <!--Menu lateral-->
+                  <article>
+
+                    <div class="row mt-5">   
+
+                        <nav class=" menu col-md-12">
+
+                          <ul class="nav">
+
+                             <li><a href="Administrador.html"><i class="fa fa-home "></i> Inicio</a></li>
+                             <li><a href="Editar_Perfil.html"><i class="fa fa-user-circle-o"></i> Editar perfil</a></li>
+                             <li><a href="Tabla2_Motos.html"><i class="fa fa-file-o "></i> Motos</a></li>
+                             <li><a href="Tabla1_Accesorios.html"><i class="fa fa-bar-chart-o "></i> Accesorios</a></li>
+                             <li><a href=""><i class="fa fa-table "></i> Compras</a></li>
+                             <li><a href=""><i class="fa fa-sign-out mb-5"></i> Salir</a></li>
+                
+                          </ul>
+
+                        </nav>
+                    </div>
+
+                    
+                  </article>
+                  <!--Fin menu lateral-->
+                     
+                </div>
+
+                <div class="col-md-10 medio2">
+
+                  <!--Titulo-->
+                    <section class="col col-sm-12 titulo mt-3 text-center titulo">
+                        <h2 >¡ Accesorios !</h2>
+                    </section>
+                  <!--FIN Titulo-->
+
+                  <!--Tabla-->
+                  <section class="col-md-12">
+                    <div class="row mt-3">
+                      
+                      <div class="input-group md-form form-sm form-2 pl-0">
+                    <input class="form-control my-0 py-1 grey-border" type="text" placeholder="Search" aria-label="Search">
+                    <span class="input-group-addon waves-effect grey lighten-3" id="basic-addon1"><a><i class="fa fa-search text-grey" aria-hidden="true"></i></a></span>
+                </div>
+                      
+
+                      <table class="table table-responsive table-striped table-bordered  mt-3">
+                          <thead class="thead-inverse">
+                          <tr >
+                            <th>Fecha</th>
+                            <th>Codigo</th>
+                            <th>Nombre del producto</th>
+                            <th>Precio de Compra</th>
+                            <th>Precio de venta</th>
+                            <th>Ganancia</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
+                          </tr>
+                          <tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>17/08/2017</td>
+                            <td>VBNS45689S</td>
+                            <td>Guantes</td>
+                            <td>$30.000</td>
+                            <td>$50.000</td>
+                            <td>$20.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>15/06/2017</td>
+                            <td>Q4W7R12357</td>
+                            <td>Baul</td>
+                            <td>$65.000</td>
+                            <td>$90.000</td>
+                            <td>$25.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></td></button>
+                          </tr>
+                          <tr>
+                          <td>01/11/2017</td>
+                          <td>4SDG8S6544</td>
+                          <td>alforjas</td>
+                          <td>$80.000</td>
+                          <td>$120.000</td>
+                          <td>$40.000</td>
+                          <td>
+                            <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                          </td>
+                          <td>
+                            <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>25/01/2017</td>
+                            <td>654ASF1234</td>
+                            <td>Alarmas</td>
+                            <td>$130.000</td>
+                            <td>$200.000</td>
+                            <td>$70.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true"></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/01/2017</td>
+                            <td>OUI13257SD</td>
+                            <td>Vestimenta</td>
+                            <td>$250.000</td>
+                            <td>$400.000</td>
+                            <td>$150.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil  icon" aria-hidden="true"></i></button>
+                              </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr><tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr><tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr><tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr><tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr><tr>
+                            <td>17/05/2017</td>
+                            <td>1747211237</td>
+                            <td>Casco</td>
+                            <td>$250.000</td>
+                            <td>$370.000</td>
+                            <td>$120.000</td>
+                            <td>
+                              <button class="btn btn-info"><i class="fa fa-pencil icon " aria-hidden="true" ></i></button>
+                            </td>
+                            <td>
+                              <button class="btn btn-danger" onclick="alerta()"><i class="fa fa-trash-o icon " aria-hidden="true"></i></button>
+                            </td>
+                          </tr>
+                      </table>
+                             
+                      
+                    </div>
+                  </section>    
+                  <!--FIN Tabla-->
+
+                   <!--Graficas estadisticos-->
+                  
+
+                    <section class="row m-auto">
+
+                      <div class="col-md-6  grafica1">
+                        
+
+                        <div class="progress mt-4">
+                            <div class="progress-bar " role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress  mt-4">
+                            <div class="progress-bar  bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress  mt-4">
+                            <div class="progress-bar  bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div class="progress-bar  bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div class="progress-bar  bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                       
+                          
+                      </div>
+
+                      
+
+                    </section>
+
+                  
+
+                  <!--FIN Graficas estadisticos-->
+
+                  
+                </div>
+            </section>
+        <!-- Fin col centrales-->
+  
+
+      <div> 
+        
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="js/scripts3.js"></script>
+
+
+</body>
+</html>  
