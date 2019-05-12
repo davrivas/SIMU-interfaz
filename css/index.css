@@ -1,0 +1,222 @@
+#encabezado {
+    height: 800px;
+    background-image: url(../images/fotocamino.jpg);
+}
+
+#unete {
+    color: white;
+    bottom: 300px;
+    right: 100px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    padding: 35px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255,255,255,.1)
+}
+
+#unete h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+button.inicioRegistro {
+    flex-direction: row;
+    margin: 0 10px;
+}
+
+button.inicioRegistro, button.componentes, button.prod-serv {
+    padding: 10px;
+    border: 2px solid rgba(255,255,255,.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.inicioRegistro:hover, button.componentes:hover, button.prod-serv:hover {
+    background-color: orange;
+}
+
+
+
+div.fase-califica {
+    position: fixed;
+    left: 0;
+    background-color: orange;
+    padding: 20px 26px 16px 40px;
+    border-radius: 0 5px 5px 0;
+    z-index: 300;
+    font-weight: bold;
+}
+
+#fase-dos-link {
+    top: 500px;
+    width: fit-content;
+    font-size: .7em;
+}
+
+#califica-simu {
+    top: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fase-califica span.fa {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.fase-califica span.fa:hover {
+    color: #fff;
+}
+
+#estrellas * {
+    transition: .3s;
+}
+
+#estrellas *:hover {
+    color: #fff;
+}
+
+#simu-ofrece {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#simu-ofrece h1 {
+    font-size: 50px;
+}
+
+.productos-servicios {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center;
+    transition: 1.5s;
+}
+
+.productos-servicios:hover {
+    background-size: 115%;
+}
+
+.productos-servicios:nth-child(2) {
+    background-image: url(../images/motos/bajaj-ejemplo.jpg); 
+}
+
+.productos-servicios:nth-child(3) {
+    background-image: url(../images/cascos.jpg);
+}
+
+.productos-servicios:nth-child(4) {
+    background-image: url(../images/guantes.jpg);
+}
+
+.productos-servicios:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.productos-servicios:nth-child(5) {
+    background-image: url(../images/mante.jpg);
+}
+
+section.descripcion {
+    width: 50%;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    padding: 25px;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+}
+
+section.descripcion h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section.descripcion p {
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+#fase-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(0,0,0,.95);
+    color: #fff;
+}
+
+#fase-dos h2 {
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+#sub-fase-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+}
+
+div.contenedores {
+    padding: 50px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contenedores h2.fa {
+    margin-bottom: 15px !important;
+    font-size: 50px !important;
+}
+
+button.componentes:hover {
+    background-color: orange;
+}
+
+.entregables-modal h2 {
+    margin: 15px 0px;
+}
+
+.entregables-modal a {
+    font-family: "Oswald";
+}
+
+.entregables-modal a:hover {
+    border-bottom: 1px dotted #fff;
+}

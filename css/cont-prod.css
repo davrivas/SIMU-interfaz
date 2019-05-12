@@ -1,0 +1,177 @@
+#contProd {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    background-color: #000;
+}
+
+#filtros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255,255,255,.1);
+    height: fit-content;
+    padding: 25px;
+    width: 35%;
+    border-radius: 5px;
+}
+
+#filtros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#filtroTitulo {
+    color: #fff;
+    text-align: center;
+}
+
+.linea {
+    border: #2b2929 1px solid;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+}
+
+#filtro {
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.campos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campos * {
+    margin: 5px;
+}
+
+.select {
+    width: 100px;
+    height: 35px;
+}
+
+.select:hover, #aplicar:hover, #limpiar:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.select select {
+    width: 95px;
+    height: 35px;
+}
+
+.camposFinal {
+    margin-top: 20px;
+}
+
+#botones {
+    display: flex;
+    justify-content: initial;
+}
+
+#aplicar, #limpiar {
+    padding: 10px;
+    color: #fff;
+    background-color: #2b2929;
+    border: 0;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+#aplicar:focus, #limpiar:focus {
+    outline: none;
+}
+
+#masFiltros {
+    transition: .2s;
+}
+
+#masFiltros:hover {
+    border-bottom: 1px dotted #fff;
+}
+
+#resultados {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255,255,255,.1);
+    height: fit-content;
+    padding: 25px;
+    width: 60%;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+#resTitulo {
+    color: #fff;
+}
+
+#productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.producto {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    justify-content: flex-start;
+}
+
+.producto img {
+    width: 300px;
+    height: 150px;
+    transition: .3s;
+}
+
+.producto img:hover {
+    opacity: .6;
+}
+
+.nomProdCart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.prodInfo {
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.precio {
+    color: orange;
+    transition: .3s;
+}
+
+.fa-cart-plus {
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.fa-cart-plus:hover {
+    color: orange;
+}

@@ -1,0 +1,30 @@
+body {
+    background-image: url(../images/fotocamino.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#contenedor {
+    background-color: rgba(0,0,0,.5);
+    padding-top: 100px;
+}
+
+article {
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px auto 25px;
+    color: #fff !important;
+    background-color: #1a1a1a;
+    width: 80%;
+    border-radius: 5px;
+    padding: 25px;
+    justify-content: center;
+    opacity: 1;
+}
+
+article h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}

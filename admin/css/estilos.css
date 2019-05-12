@@ -1,0 +1,81 @@
+/* Oswald */
+
+@font-face {
+    src: url(../../fonts/Oswald/Oswald-Regular.ttf);
+    font-family: "Oswald";
+}
+
+/* Open Sans */
+
+@font-face {
+    src: url(../../fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-family: "Open Sans";
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(https://ugc.kn3.net/i/origin/http://www.fondospantallagratis.com/wp-content/uploads/2009/01/carretera_en_el_desierto.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	margin: 0px;
+	font-family: arial;
+
+}
+form{
+	width: 450px;
+	height: 500px;
+	margin: auto;
+	background:rgba(0,0,0,.5);
+	box-sizing: border-box;
+	margin-top: 150px;
+    border-radius: 14px;
+
+}
+
+h1{
+	color:#fff;
+	text-align: center;
+	font-size: 3em;
+}
+h2{
+	color:#fff;
+	text-align: center;
+	margin: 0;
+	font-size: 1em;
+	margin-bottom: 20px;
+	margin-top: 70px;
+}
+h3{
+	color:#fff;
+	text-align: center;
+	margin: 0;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+input{
+width: 420px;
+margin-bottom:20px;
+padding: 5px;
+box-sizing: border-box;
+font-size: 17px;
+border-radius: 5px;
+margin-left: 10px;
+
+}
+#boton{
+	width: 150px;
+	height: 50px;
+	padding: 20px;
+	background: rgba(0,0,0,.8);	
+	color: #fff;
+	cursor: pointer;
+	margin-left: 145px; 
+	margin-top: 20px;
+	text-align: center;
+
+
+}

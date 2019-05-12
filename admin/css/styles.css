@@ -1,0 +1,296 @@
+/* Oswald */
+
+@font-face {
+    src: url(../../fonts/Oswald/Oswald-Regular.ttf);
+    font-family: "Oswald";
+}
+
+/* Open Sans */
+
+@font-face {
+    src: url(../../fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-family: "Open Sans";
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    text-align: center;
+    width: 110%;
+}
+#caja1{  
+width: 18%;
+height: 800px;
+background-color:rgba(0,0,0,.2);
+margin-left: 5px;
+
+
+}
+
+h5{
+color: white;
+font-size: 1em;
+margin-bottom: 50px;
+
+}
+
+
+/*ESTILOS PARA EL HEADER*/
+
+header{
+background: #000;
+border: 4px solid white;
+height: 70px;
+
+}
+h1{
+	color: orange;
+	font-size: 2.5em;
+	margin-top: 5px;
+	font-family: oswald;
+    margin-left: 200px;
+        
+}
+h3{
+	color: white;
+	font-size: 1em;
+	font-family: oswald;
+}
+
+
+
+/*ESTILOS PARA CAJA1 Y SUBCAJA-------MENU IZQUIERDO*/
+ul{
+	list-style: none;
+
+}
+ul li a{
+	display: inline-table;
+	color: white;	
+	padding: 10px;
+
+}
+
+.menu-vert {
+	background-color: #0f0d0d;
+	color: orange;
+    text-decoration:none;
+	width:100%;
+	height:60px;
+	font-family: arial;
+	border-radius: 1px;
+	margin-top: 10px;
+
+}
+.menu-vert a{
+    text-decoration: none;
+    
+}
+
+.menu-vert a:hover{
+	color: orange;
+
+}
+
+ul li:hover{
+     border-bottom:2px solid orange;
+}
+img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+  
+}
+
+
+/*TITULO*/
+#page{
+	width: 600px;
+	height: 100px;
+	margin:auto;
+	position: relative;
+	left: 90px;
+	top: -800px;
+}
+.titulo{
+	margin-right: -10px;
+	margin-right: -15px;
+}
+h2{
+	color: #ffac30;
+	font-size: 3em;
+	font-family: Times;
+	font-family: oswald;
+}
+h4{
+	color: #ffac30;
+	font-size: 2em;
+	font-family: oswald;
+ 
+}
+/*CONTENEDORES DEL MEDIO*/
+
+/***********************/
+/* CONTENEDOR NUMERO 2*/
+#subcont{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	background-color: #031342;
+	left: 450px;
+	top: -700px;/*:V*/
+	cursor: pointer;
+	border-radius: 2px;
+	font-family: oswald;
+
+}
+
+#subcont:hover{
+	background-color: #2b407c;
+}
+
+
+
+
+/***********************/
+/* CONTENEDOR NUMERO 3*/
+#cajita{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	background-color: #02300f;
+	top: -1000px;
+	left: 670px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: oswald;
+}
+
+#cajita:hover{
+	background-color: #0e4c20;
+}
+
+
+/***********************/
+/* CONTENEDOR NUMERO 4*/
+#subcaja{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	top: -1300px;
+	left: 890px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: oswald;
+
+
+}
+
+/*****************************/
+#ventana4{
+display: none;
+}
+#abremodal4{
+	display: block;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	line-height: 50px;
+	background-color:#c1a100;
+	color: #fff;
+	font-size: 2em;
+	font-weight: bolder;
+	cursor: pointer;
+
+
+}
+#abremodal4:hover{
+	background-color: #efdd7f;
+}
+.ventanamodal4{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -100%;
+	left: 0px;
+	background-color: rgba(0,0,0,.9);
+	-webkit-transition: all 1s;
+}
+#ventana4:checked ~ .ventanamodal4{
+	top: 0;
+}
+#cierramodal4{
+	display: block;
+	color: #fff;
+	font-size: 2em;
+	background-color: #000;
+	width:40px;
+	height: 40px;
+	text-align: center;
+	margin-left: 1230px;
+	cursor: pointer;
+}
+.centro{
+	width: 500px;
+	height: 350px;
+	background-color: white;
+	color: white;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 150px auto
+}
+
+p{
+	font-size: 2.1em;
+	color: #fff;
+	text-align: center;
+}
+/*****************/
+/*CAJA DEL MODAL*/
+#minicentro1{
+	width: 150px;
+	height: 150px;
+	background-color: #af130e;
+	color: black;
+	margin-left: 45px;
+	margin-top: 100px;
+}
+#minicentro1:hover{
+	background-color: #db4848;
+}
+
+#minicentro2{
+	width: 150px;
+	height: 150px;
+	background-color: #09591e;
+	color: black;
+	margin-left: 290px;
+	margin-top: -150px;
+}
+#minicentro2:hover{
+	background-color:#1c9613;
+}
+.logo{
+    height: 40px;
+    width: auto;
+    margin-right: 25px;
+    position: absolute;
+    left: 90px;
+    
+}
+.icono-admin{
+    position: relative;
+    left: -20px;
+}
+.fondo{
+    background-size: 100% 100%;
+}
+.contenedor{
+    background-image: url(../img/pexels-photo-165938.jpeg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 800px;
+        
+}
