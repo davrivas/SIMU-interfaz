@@ -4,7 +4,7 @@
 
 Sistema de información para motos usadas
 
-Proyecto en Java web https://bitbucket.org/davrivas/simu/src/master/
+Proyecto en Java web [https://github.com/davrivas/SIMU](https://github.com/davrivas/SIMU)
 
 ## Realizado por:
 
